@@ -1,5 +1,5 @@
 # run_eigen_left_fixed.py
-from eigenvalues_gels_Pedro_Nov4 import *
+from eigenvalues_gels import *
 import sys
 import numpy as np
 import matplotlib.pyplot as plt
