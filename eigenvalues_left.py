@@ -20,9 +20,9 @@ if __name__ == "__main__":
     # #####
     gel = gelsStability(phi0=0.9,
                         gamma=1e-3,
-                        chi=0.4,
+                        chi=0.348,
                         epsilon=1.62/90.0,
-                        L=10);
+                        L=20);
     #
     if gel.discriminant<0:
         sys.exit(1)    

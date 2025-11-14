@@ -18,7 +18,7 @@ if __name__ == "__main__":
     # #####
     # First part of the parameters to be modified
     # #####
-    gel = gelsStability(phi0=0.9,
+    gel = gelsStability(phi0=0.2,
                         gamma=1e-3,
                         chi=0.4,
                         epsilon=1.62/90.0,
