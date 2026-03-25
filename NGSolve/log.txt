@@ -1,0 +1,7 @@
+malla: mesh0.vol.gz
+- con el código modificado que escribimos ayer
+***
+- números me parecen un poco altos, pero creo que es un efecto del Draw, y que en  ParaView si aparecerán del orden de 152 KPa al medio (estiramiento uniaxial), como yo esperaba. Por lo menos bajó de los ~600 KPa de ayer (con el mayor shear modulus de la iteración 10 del incremental softening)
+- cambiar el código para hacer el cálculo con el W(F) correcto, incluyendo el potencial químico
+- recompilar los códigos 2D y cambiarlos para incluir el potencial químico
+- hacer las pruebas con distintos phi_0
