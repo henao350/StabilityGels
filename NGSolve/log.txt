@@ -1,15 +1,15 @@
     
-# EL FUTURO
+Pendiente: 
+- Con el problema que ya sabemos que funciona (el cálculo de las 16 h), 
+  aprendamos a calcularlo en el cluster
 - recompilar los códigos 2D y cambiarlos para incluir el potencial químico
-- hacer las pruebas con distintos phi_0
-
-[2/abr/26] 
-Corregimos la definición de la función gel_3D.mu_fun
-Pendiente: probar con más iteraciones del mu_list   (esto es, cambiar el indexes_iterations = [0])
-En caso que funcione, probarlo en el cluster
-En caso que funcione en el cluster, probar con otros valores de mu (ir acercándose al mu_bar crítico)
+- Probar primero con un gel con más agua inicial (más estable, phi0=0.2 entre otros)
+- probar con más iteraciones del mu_list   (esto es, cambiar el indexes_iterations = [0])
+- En caso que funcione, probarlo en el cluster
+- En caso que funcione en el cluster, probar con otros valores de mu (ir acercándose al mu_bar crítico)
 
 ### VAMOS AQUÍ 
+[2/abr/26] Corregimos la definición de la función gel_3D.mu_fun
 - cambiar el código para hacer el cálculo con el W(F) correcto, incluyendo el potencial químico
       - modificar el código de tal forma que no comience con un G alto y lo vaya disminuyendo hasta llegar a gamma=0.001,
         sino que comience con un mu de magnitud grande y vaya reduciendo la magnitud de mu, manteniendo siempre el mismo gamma
