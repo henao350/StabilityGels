@@ -1,0 +1,19 @@
+<VTKFile type="Collection" version="0.1">
+  <Collection>
+    <DataSet timestep="0" file="result_phi0=0.2_muBarAbs=0.000500_order=2_iter=01.vtu"/>
+    <DataSet timestep="1" file="result_phi0=0.2_muBarAbs=0.000500_order=2_iter=02.vtu"/>
+    <DataSet timestep="2" file="result_phi0=0.2_muBarAbs=0.000500_order=2_iter=03.vtu"/>
+    <DataSet timestep="3" file="result_phi0=0.2_muBarAbs=0.000500_order=2_iter=04.vtu"/>
+    <DataSet timestep="4" file="result_phi0=0.2_muBarAbs=0.000500_order=2_iter=05.vtu"/>
+    <DataSet timestep="5" file="result_phi0=0.2_muBarAbs=0.000500_order=2_iter=06.vtu"/>
+    <DataSet timestep="6" file="result_phi0=0.2_muBarAbs=0.000500_order=2_iter=07.vtu"/>
+    <DataSet timestep="7" file="result_phi0=0.2_muBarAbs=0.000500_order=2_iter=08.vtu"/>
+    <DataSet timestep="8" file="result_phi0=0.2_muBarAbs=0.000500_order=2_iter=09.vtu"/>
+    <DataSet timestep="9" file="result_phi0=0.2_muBarAbs=0.000500_order=2_iter=10.vtu"/>
+    <DataSet timestep="10" file="result_phi0=0.2_muBarAbs=0.000500_order=2_iter=11.vtu"/>
+    <DataSet timestep="11" file="result_phi0=0.2_muBarAbs=0.000500_order=2_iter=12.vtu"/>
+    <DataSet timestep="12" file="result_phi0=0.2_muBarAbs=0.000500_order=2_iter=13.vtu"/>
+    <DataSet timestep="13" file="result_phi0=0.2_muBarAbs=0.000500_order=2_iter=14.vtu"/>
+    <DataSet timestep="14" file="result_phi0=0.2_muBarAbs=0.000500_order=2_iter=15.vtu"/>
+  </Collection>
+</VTKFile>
