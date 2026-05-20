@@ -1,0 +1,115 @@
+slurmstepd: error: Unable to create TMPDIR [/data/tmp]: No such file or directory
+slurmstepd: error: Setting TMPDIR to /tmp
+Parámetros: 90 15.0 1.62 0.20 0.001
+L=90.0
+w=15.0
+d=1.62
+phi0=0.2
+mu_bar=-0.001
+phi0 = 0.2
+mu_bar = -0.001
+entropic unit = 137.21349978333333
+used mu_bar = -0.001
+nDoF = 586314
+Newton iteration: 0 Residual: 14.845204417005961 Step: 0.00025 Time: 0:00:55.496585
+Newton iteration: 1 Residual: 14.818696124593615 Step: 0.001 Time: 0:01:43.065007
+Newton iteration: 2 Residual: 14.780551521956605 Step: 0.001 Time: 0:02:30.768459
+Newton iteration: 3 Residual: 14.750681398421877 Step: 0.001 Time: 0:03:19.363803
+Newton iteration: 4 Residual: 14.730384816095949 Step: 0.001 Time: 0:04:05.665464
+Newton iteration: 5 Residual: 14.683827743531776 Step: 0.001 Time: 0:04:52.515645
+Newton iteration: 6 Residual: 14.659355955305394 Step: 0.001 Time: 0:05:41.825456
+Newton iteration: 7 Residual: 14.623095611132356 Step: 0.001 Time: 0:06:29.378727
+Newton iteration: 8 Residual: 14.580384504105401 Step: 0.001 Time: 0:07:17.308416
+Newton iteration: 9 Residual: 14.551854648918653 Step: 0.001 Time: 0:08:04.641454
+Newton iteration: 10 Residual: 14.532766519458445 Step: 0.001 Time: 0:08:53.215913
+Newton iteration: 11 Residual: 14.506337329372405 Step: 0.001 Time: 0:09:39.657522
+Newton iteration: 12 Residual: 14.480898672533026 Step: 0.001 Time: 0:10:27.679432
+Newton iteration: 13 Residual: 14.460472489727959 Step: 0.000125 Time: 0:11:23.688361
+Newton iteration: 14 Residual: 14.446553825487838 Step: 0.00025 Time: 0:12:15.118464
+Newton iteration: 15 Residual: 14.418712193714175 Step: 0.001 Time: 0:13:00.782538
+Newton iteration: 16 Residual: 14.405579050189536 Step: 0.00025 Time: 0:13:52.085180
+Newton iteration: 17 Residual: 14.370902018286055 Step: 0.001 Time: 0:14:38.344129
+Newton iteration: 18 Residual: 14.341866518253484 Step: 0.001 Time: 0:15:25.121611
+Newton iteration: 19 Residual: 14.320980729528916 Step: 0.000125 Time: 0:16:19.924723
+Newton iteration: 20 Residual: 14.308460524796795 Step: 0.000125 Time: 0:17:15.305661
+Newton iteration: 21 Residual: 14.294087861096815 Step: 0.00025 Time: 0:18:06.591040
+Newton iteration: 22 Residual: 14.265359821397334 Step: 0.001 Time: 0:18:53.837732
+Newton iteration: 23 Residual: 14.249186011382898 Step: 0.0005 Time: 0:19:44.981298
+Newton iteration: 24 Residual: 14.21934060346781 Step: 0.001 Time: 0:20:32.417959
+Newton iteration: 25 Residual: 14.209258698036091 Step: 0.0005 Time: 0:21:22.526330
+Newton iteration: 26 Residual: 14.183130795353248 Step: 0.001 Time: 0:22:11.973754
+Newton iteration: 27 Residual: 14.171112474352638 Step: 0.0005 Time: 0:23:01.208150
+Newton iteration: 28 Residual: 14.156386046714031 Step: 0.000125 Time: 0:23:56.291530
+Newton iteration: 29 Residual: 14.152894792896278 Step: 0.0005 Time: 0:24:44.939147
+Newton iteration: 30 Residual: 14.143229477867306 Step: 0.00025 Time: 0:25:37.055090
+Newton iteration: 31 Residual: 14.134461203969064 Step: 0.000125 Time: 0:26:31.402325
+Newton iteration: 32 Residual: 14.12343889051754 Step: 0.0005 Time: 0:27:21.137205
+Newton iteration: 33 Residual: 14.115661605769589 Step: 0.000125 Time: 0:28:15.882911
+Newton iteration: 34 Residual: 14.110054566005436 Step: 0.000125 Time: 0:29:08.774813
+Newton iteration: 35 Residual: 14.089574113644868 Step: 0.001 Time: 0:29:56.722823
+Newton iteration: 36 Residual: 14.083052562319654 Step: 6.25e-05 Time: 0:30:51.650894
+Newton iteration: 37 Residual: 14.07682185293474 Step: 0.00025 Time: 0:31:43.991014
+Newton iteration: 38 Residual: 14.05691932431913 Step: 0.001 Time: 0:32:30.207419
+Newton iteration: 39 Residual: 14.039878960786558 Step: 0.001 Time: 0:33:15.481444
+Newton iteration: 40 Residual: 14.031409128957213 Step: 0.0005 Time: 0:34:05.440537
+Newton iteration: 41 Residual: 14.030097580184348 Step: 3.125e-05 Time: 0:35:04.845692
+Newton iteration: 42 Residual: 14.020034145746664 Step: 0.0005 Time: 0:35:53.114686
+Newton iteration: 43 Residual: 14.01755022478772 Step: 0.000125 Time: 0:36:45.179221
+Newton iteration: 44 Residual: 14.008128373090235 Step: 0.0005 Time: 0:37:34.356204
+Newton iteration: 45 Residual: 14.00541263201282 Step: 6.25e-05 Time: 0:38:31.319645
+Newton iteration: 46 Residual: 14.001272926791382 Step: 0.00025 Time: 0:39:22.911098
+Newton iteration: 47 Residual: 13.991313723449968 Step: 0.001 Time: 0:40:11.640307
+Newton iteration: 48 Residual: 13.988950387313405 Step: 0.00025 Time: 0:41:03.798735
+Newton iteration: 49 Residual: 13.975571635020952 Step: 0.001 Time: 0:41:49.800684
+Newton iteration: 50 Residual: 13.962105581987844 Step: 0.001 Time: 0:42:38.904179
+Newton iteration: 51 Residual: 13.953646789957421 Step: 0.001 Time: 0:43:26.207526
+Newton iteration: 52 Residual: 13.953294357541802 Step: 0.000125 Time: 0:44:18.264341
+Newton iteration: 53 Residual: 13.941360700487325 Step: 0.001 Time: 0:45:03.091654
+Newton iteration: 54 Residual: 13.939860173366766 Step: 0.00025 Time: 0:45:57.282359
+Newton iteration: 55 Residual: 13.939242392138583 Step: 6.25e-05 Time: 0:46:53.131258
+Newton iteration: 56 Residual: 13.939150875699335 Step: 0.0005 Time: 0:47:40.450723
+Newton iteration: 57 Residual: 13.93696501712861 Step: 0.001 Time: 0:48:26.295479
+Newton iteration: 58 Residual: 13.933875051959374 Step: 0.00025 Time: 0:49:18.552513
+Newton iteration: 59 Residual: 13.92845739055475 Step: 0.001 Time: 0:50:05.454577
+Newton iteration: 60 Residual: 13.916903051942665 Step: 0.001 Time: 0:50:50.821471
+Newton iteration: 61 Residual: 13.915094052090021 Step: 0.001 Time: 0:51:35.489545
+Newton iteration: 62 Residual: 13.91436599990229 Step: 0.0005 Time: 0:52:22.574725
+Newton iteration: 63 Residual: 13.909792649517671 Step: 0.0005 Time: 0:53:09.679813
+WARNING: line search failed
+Newton iteration: 64 Residual: 13.909799469447886 Step: 2.44140625e-07 Time: 0:54:21.401224
+Newton iteration: 65 Residual: 13.909798698496926 Step: 9.765625e-07 Time: 0:55:35.409425
+Newton iteration: 66 Residual: 13.909543261222579 Step: 6.25e-05 Time: 0:56:29.792395
+Newton iteration: 67 Residual: 13.909541679479492 Step: 9.765625e-07 Time: 0:57:39.596510
+Newton iteration: 68 Residual: 13.897628099154952 Step: 0.001 Time: 0:58:25.465280
+Newton iteration: 69 Residual: 13.896015070179043 Step: 0.00025 Time: 0:59:16.369675
+Newton iteration: 70 Residual: 13.89563878473623 Step: 6.25e-05 Time: 1:00:12.907322
+Newton iteration: 71 Residual: 13.893133182266345 Step: 0.0005 Time: 1:01:01.460207
+Newton iteration: 72 Residual: 13.891447488573679 Step: 0.0005 Time: 1:01:49.198378
+Newton iteration: 73 Residual: 13.89025452796254 Step: 0.0005 Time: 1:02:37.076965
+Newton iteration: 74 Residual: 13.889823488464913 Step: 0.000125 Time: 1:03:29.711241
+Newton iteration: 75 Residual: 13.887657346216534 Step: 0.001 Time: 1:04:15.609958
+Newton iteration: 76 Residual: 13.887569071677625 Step: 6.25e-05 Time: 1:05:11.827977
+Newton iteration: 77 Residual: 13.88290435229581 Step: 0.0005 Time: 1:06:02.744265
+Newton iteration: 78 Residual: 13.881829520764539 Step: 0.000125 Time: 1:06:56.991697
+Newton iteration: 79 Residual: 13.880986742272515 Step: 0.000125 Time: 1:07:51.871738
+Newton iteration: 80 Residual: 13.874822855154965 Step: 0.0005 Time: 1:08:40.071795
+Newton iteration: 81 Residual: 13.862657847163732 Step: 0.001 Time: 1:09:25.874575
+Newton iteration: 82 Residual: 13.852712423529137 Step: 0.001 Time: 1:10:12.868533
+Newton iteration: 83 Residual: 13.84959125770419 Step: 0.0005 Time: 1:11:02.579911
+Newton iteration: 84 Residual: 13.841013639196932 Step: 0.001 Time: 1:11:48.177045
+Newton iteration: 85 Residual: 13.839571481905526 Step: 0.0005 Time: 1:12:35.938151
+Newton iteration: 86 Residual: 13.835300476106532 Step: 0.001 Time: 1:13:22.339705
+Newton iteration: 87 Residual: 13.834417412543385 Step: 0.000125 Time: 1:14:15.488052
+Newton iteration: 88 Residual: 13.823759901525165 Step: 0.001 Time: 1:15:02.937989
+Newton iteration: 89 Residual: 13.823703695074338 Step: 1.5625e-05 Time: 1:16:02.403138
+Newton iteration: 90 Residual: 13.819935979409822 Step: 0.0005 Time: 1:16:51.636721
+Newton iteration: 91 Residual: 13.819745754003977 Step: 3.125e-05 Time: 1:17:48.212878
+Newton iteration: 92 Residual: 13.808613208879434 Step: 0.001 Time: 1:18:34.287393
+Newton iteration: 93 Residual: 13.80851913866571 Step: 0.0005 Time: 1:19:23.999716
+Newton iteration: 94 Residual: 13.798389860012595 Step: 0.001 Time: 1:20:11.412345
+Newton iteration: 95 Residual: 13.796872998041014 Step: 0.00025 Time: 1:21:02.995094
+Newton iteration: 96 Residual: 13.795998027277154 Step: 0.000125 Time: 1:21:57.180583
+Newton iteration: 97 Residual: 13.795980193331948 Step: 7.8125e-06 Time: 1:23:00.399164
+Newton iteration: 98 Residual: 13.788272643640882 Step: 0.001 Time: 1:23:46.426749
+Newton iteration: 99 Residual: 13.777860350747957 Step: 0.001 Time: 1:24:32.069508
+Simulation finished.
