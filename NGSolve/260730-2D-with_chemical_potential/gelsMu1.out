@@ -1,0 +1,9 @@
+L=90.0 [mm], d=1.62 [mm], order=3, phi0=0.2, mu_bar=-0.002
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 1.46, gel.mu_fun(lambda_target) = -0.0020339248681859015
+filename_suffix=_phi0=0.2_absMuBar=0.002
+nDoF = 16670
+mu_bar_end = -0.002
+filename=gridfunctions/result_gelsMu2D_phi0=0.2_absMuBar=0.002_order=3
+*** Iteration #0, mu_bar = -0.005415142736731723
+*** Iteration #1, mu_bar = -0.002
+Time elapsed =0:02:20.986389

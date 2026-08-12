@@ -16,7 +16,7 @@ gel = gel2d(L,d,phi0,dummy_mu_bar)
 # print(f'mu_bar = {mu_bar}')
 
 lambda_start = 1.1
-lambda_end = 1.5
+lambda_end = 6.0
 num_points = 30
 lambda_values = np.linspace(lambda_start,lambda_end,num_points)
 mu_bar_values = [gel.mu_fun(lamb) for lamb in lambda_values]

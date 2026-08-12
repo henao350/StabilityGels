@@ -17,7 +17,7 @@ class gel2d:
         self.length = length
         self.d = thickness
         self.phi0 = phi0
-        self.mu_bar = mu_bar
+        # self.mu_bar = mu_bar
         T = 25 + 273.15     # in [K]
         K_B = 1.380649e-23  # in [J·K^{-1}]
         V_m = 3e-29         # in [m^3]
@@ -70,6 +70,7 @@ class gel2d:
         phi0 = gel.phi0
         p_bar = gel.p_bar
         p = p_bar * self.entropic_unit
+        mu_bar = gel.mu_bar.Get()
         # nu=gel.entropic_unit
         
         # reference_energy_density =  self.reference_energy_density        
@@ -82,9 +83,110 @@ class gel2d:
         pressure_external_solvent = (J - phi0)*p
         return elastic + Flory_Huggins + chemical_potential + pressure_external_solvent
 
+class Solve_gel_bonded:
+    def __init__(self, gel, order=3):           # corner_refinement capability not yet activated
+        self.gel = gel
+        self.order = order
+
+    def add_mesh(self, mesh_file):
+        self.mesh = Mesh(mesh_file)
+
+    def Space(self):
+        # Finite element space with zero-displacement boundary condition on the whole interface
+        self.fes = VectorH1(self.mesh, order=self.order, \
+                            dirichlet="bonded_interface|debonded_interface")
+        print('nDoF = {}'.format(self.fes.ndof))
+
+    def model(self):
+        u = self.fes.TrialFunction()
+        I = Id(self.mesh.dim)
+        F = I + Grad(u)
+
+        def negpart(var):
+            #return max(-var,0)
+            return (sqrt(var**2)-var)*0.5        
+
+        AA = 1e5
+        # hydrogel model        
+        self.a = BilinearForm(self.fes, symmetric=False)
+        self.a += Variation(  self.gel.W(F).Compile() * dx)
+        self.a += Variation(  AA*negpart(y+u[1])**2 * dx)
+
+
+    def Solve_incremental_softening(self):
+        self.Space()        
+        self.gfu = GridFunction(self.fes)
+        self.gfu.vec[:] = 0
+
+        mu_bar_end = self.gel.mu_bar.Get()
+        print(f'mu_bar_end = {mu_bar_end}')
+        lambda_initial = 1.1
+        mu_bar_0 = self.gel.mu_fun(lambda_initial)
+        # nIterations = 15
+        nIterations = 1
+        self.gel.mu_bar.Set(mu_bar_0)
+        self.model()
+
+        #From 0 to nIterations-1
+        lambda_list = np.linspace(lambda_initial, self.gel.lambda_target, nIterations, endpoint = False)
+        #gamma_list = [self.gel.gammafun(la) for la in lambda_list]
+        mu_bar_list = [self.gel.mu_fun(la) for la in lambda_list]
+        # final iteration
+        mu_bar_list.append(mu_bar_end)
+
+        filename = 'gridfunctions/result_gelsMu2D'+self.gel.filename_suffix + f'_order={self.order}'
+        print(f'filename={filename}')    
+
+        tol=1e-3; maxits=100;
+
+        indexes_iterations = range(nIterations+1)
+        for numIteration in indexes_iterations:
+            mu_bar_i = mu_bar_list [numIteration]
+            print(f"*** Iteration #{numIteration}, mu_bar = {mu_bar_i}")
+
+            if numIteration==nIterations:
+                tol=1e-6; maxits=500;
+            
+            self.gel.mu_bar.Set(mu_bar_i)
+            self.gfu, _,_ = SolveNonlinearMinProblem(a= self.a, gfu = self.gfu,\
+                        FreeDofs =self.fes.FreeDofs(), maxits=maxits, tol=tol)
+
+            # Draw(self.gfu, deformation=True)            
+            # self.gfu.Save(filename + '_iter=' + str(numIteration).zfill(2) + '.gfu')
+            self.gfu.Save(filename + '.gfu')
+
+
+def SolveNonlinearMinProblem(a, gfu, FreeDofs, tol=1e-08, maxits=50, alpha=5e-2):#, scenes=None):
+    res = gfu.vec.CreateVector()
+    du  = gfu.vec.CreateVector()
+
+    for it in range(maxits):
+        #print ("Newton iteration {:3}".format(it),end=", ")
+        # print ("energy = {:16}".format(a.Energy(gfu.vec)),end="")
+
+        # solve linearized problem:
+        a.Apply (gfu.vec, res)
+        a.AssembleLinearization (gfu.vec)
+        inv = a.mat.Inverse(FreeDofs)
+        #alpha = 5e-2
+        du.data = - alpha * inv * res
+
+        #update iteration
+        gfu.vec.data += du
+
+        #stopping criteria
+        stopcritval = sqrt(abs(InnerProduct(du,res)))
+        #print ("<A u",it,", A u",it,">_{-1}^0.5 = ", stopcritval)
+        if stopcritval < tol:
+            
+            break
+
+        #for sc in scenes:
+        #    sc.Redraw()
+
+    return gfu, stopcritval, it
 
 if __name__ == '__main__':
-    print("Hello")
     start_time = datetime.datetime.now()
     #### READ PARAMETERS ####
     # It will be assumed that the arguments passed from shell
@@ -107,4 +209,11 @@ if __name__ == '__main__':
     print(f'L={L} [mm], d={d} [mm], order={order}, phi0={phi0}, mu_bar={mu_bar}')
     #
     gel = gel2d(L,d,phi0,mu_bar)
+    #
+    modelling = Solve_gel_bonded (gel, order=order)
+    mesh_file = 'meshes1_62/mesh51.vol'
+    modelling.add_mesh(mesh_file)
+    modelling.Solve_incremental_softening()    
+    print("Time elapsed =" + str(datetime.datetime.now() - start_time))
+    # 
 
