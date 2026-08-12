@@ -1,0 +1,108 @@
+FATAL:   While checking container encryption: could not open image /mnt/beegfs/home/phernandez/260812-Cluster-gelsMu2D/~/ngsolve_latest.sif: failed to retrieve path for /mnt/beegfs/home/phernandez/260812-Cluster-gelsMu2D/~/ngsolve_latest.sif: lstat /mnt/beegfs/home/phernandez/260812-Cluster-gelsMu2D/~: no such file or directory
+L=90.0 [mm], d=1.62 [mm], order=3, phi0=0.2, mu_bar=-0.002
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 1.46, gel.mu_fun(lambda_target) = -0.0020339248681859015
+filename_suffix=_phi0=0.2_absMuBar=0.002
+nDoF = 16670
+mu_bar_end = -0.002
+filename=gridfunctions/result_gelsMu2D_phi0=0.2_absMuBar=0.002_order=3
+*** Iteration #0, mu_bar = -0.005415142736731723
+*** Iteration #1, mu_bar = -0.002
+Time elapsed =0:00:33.581012
+L=90.0 [mm], d=1.62 [mm], order=3, phi0=0.2, mu_bar=-0.005
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 1.12, gel.mu_fun(lambda_target) = -0.005133299456205672
+filename_suffix=_phi0=0.2_absMuBar=0.005
+nDoF = 16670
+mu_bar_end = -0.005
+filename=gridfunctions/result_gelsMu2D_phi0=0.2_absMuBar=0.005_order=3
+*** Iteration #0, mu_bar = -0.005415142736731723
+*** Iteration #1, mu_bar = -0.005
+Time elapsed =0:00:35.533709
+L=90.0 [mm], d=1.62 [mm], order=3, phi0=0.2, mu_bar=-0.004
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 1.21, gel.mu_fun(lambda_target) = -0.0040456822318242856
+filename_suffix=_phi0=0.2_absMuBar=0.004
+nDoF = 16670
+mu_bar_end = -0.004
+filename=gridfunctions/result_gelsMu2D_phi0=0.2_absMuBar=0.004_order=3
+*** Iteration #0, mu_bar = -0.005415142736731723
+*** Iteration #1, mu_bar = -0.004
+Time elapsed =0:00:14.649236
+ 
+L=90.0 [mm], d=1.62 [mm], order=3, phi0=0.2, mu_bar=-0.002
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 1.46, gel.mu_fun(lambda_target) = -0.0020339248681859015
+filename_suffix=_phi0=0.2_absMuBar=0.002
+nDoF = 16670
+mu_bar_end = -0.002
+filename=gridfunctions/result_gelsMu2D_phi0=0.2_absMuBar=0.002_order=3
+*** Iteration #0, mu_bar = -0.005415142736731723, lambda_i=1.1
+*** Iteration #1, mu_bar = -0.005078894213164102, lambda_i=1.124
+*** Iteration #2, mu_bar = -0.004765315821481065, lambda_i=1.1480000000000001
+*** Iteration #3, mu_bar = -0.004472263184466035, lambda_i=1.1720000000000002
+*** Iteration #4, mu_bar = -0.004197838530764865, lambda_i=1.196
+*** Iteration #5, mu_bar = -0.003940357588884698, lambda_i=1.22
+*** Iteration #6, mu_bar = -0.003698321530930996, lambda_i=1.244
+*** Iteration #7, mu_bar = -0.0034703931076992245, lambda_i=1.268
+*** Iteration #8, mu_bar = -0.003255376276994037, lambda_i=1.292
+*** Iteration #9, mu_bar = -0.003052198754817271, lambda_i=1.316
+*** Iteration #10, mu_bar = -0.0028598970214306872, lambda_i=1.34
+*** Iteration #11, mu_bar = -0.0026776033967009657, lambda_i=1.3639999999999999
+*** Iteration #12, mu_bar = -0.0025045348657637533, lambda_i=1.388
+*** Iteration #13, mu_bar = -0.0023399833901475865, lambda_i=1.412
+*** Iteration #14, mu_bar = -0.0021833074836261727, lambda_i=1.436
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/phernandez/260812-Cluster-gelsMu2D/gels2d_ChemicalPotential.py", line 216, in <module>
+    modelling.Solve_incremental_softening()    
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/beegfs/home/phernandez/260812-Cluster-gelsMu2D/gels2d_ChemicalPotential.py", line 145, in Solve_incremental_softening
+    print(f"*** Iteration #{numIteration}, mu_bar = {mu_bar_i}, lambda_i={lambda_list[numIteration]}")
+                                                                          ~~~~~~~~~~~^^^^^^^^^^^^^^
+IndexError: index 15 is out of bounds for axis 0 with size 15
+  File "/mnt/beegfs/home/phernandez/260812-Cluster-gelsMu2D/gels2d_ChemicalPotential.py", line 135
+    lambda_list.append(self.gel.lambda_target)
+TabError: inconsistent use of tabs and spaces in indentation
+  File "/mnt/beegfs/home/phernandez/260812-Cluster-gelsMu2D/gels2d_ChemicalPotential.py", line 135
+    lambda_list.append(self.gel.lambda_target)
+TabError: inconsistent use of tabs and spaces in indentation
+Screen printout available also at: slurm-1019459.out
+  File "/mnt/beegfs/home/phernandez/260812-Cluster-gelsMu2D/gels2d_ChemicalPotential.py", line 135
+    lambda_list.append(self.gel.lambda_target)
+TabError: inconsistent use of tabs and spaces in indentation
+Screen printout available also at: slurm-1019460.out
+L=90.0 [mm], d=1.62 [mm], order=3, phi0=0.2, mu_bar=-0.002
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 1.46, gel.mu_fun(lambda_target) = -0.0020339248681859015
+filename_suffix=_phi0=0.2_absMuBar=0.002
+nDoF = 16670
+mu_bar_end = -0.002
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/phernandez/260812-Cluster-gelsMu2D/gels2d_ChemicalPotential.py", line 217, in <module>
+    modelling.Solve_incremental_softening()    
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/beegfs/home/phernandez/260812-Cluster-gelsMu2D/gels2d_ChemicalPotential.py", line 135, in Solve_incremental_softening
+    lambda_list.append(self.gel.lambda_target)
+    ^^^^^^^^^^^^^^^^^^
+AttributeError: 'numpy.ndarray' object has no attribute 'append'
+Screen printout available also at: slurm-1019461.out
+L=90.0 [mm], d=1.62 [mm], order=3, phi0=0.2, mu_bar=-0.002
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 1.46, gel.mu_fun(lambda_target) = -0.0020339248681859015
+filename_suffix=_phi0=0.2_absMuBar=0.002
+nDoF = 16670
+mu_bar_end = -0.002
+filename=gridfunctions/result_gelsMu2D_phi0=0.2_absMuBar=0.002_order=3
+*** Iteration #0, mu_bar = -0.005415142736731723, lambda_i=1.1
+*** Iteration #1, mu_bar = -0.005078894213164102, lambda_i=1.124
+*** Iteration #2, mu_bar = -0.004765315821481065, lambda_i=1.1480000000000001
+*** Iteration #3, mu_bar = -0.004472263184466035, lambda_i=1.1720000000000002
+*** Iteration #4, mu_bar = -0.004197838530764865, lambda_i=1.196
+*** Iteration #5, mu_bar = -0.003940357588884698, lambda_i=1.22
+*** Iteration #6, mu_bar = -0.003698321530930996, lambda_i=1.244
+*** Iteration #7, mu_bar = -0.0034703931076992245, lambda_i=1.268
+*** Iteration #8, mu_bar = -0.003255376276994037, lambda_i=1.292
+*** Iteration #9, mu_bar = -0.003052198754817271, lambda_i=1.316
+*** Iteration #10, mu_bar = -0.0028598970214306872, lambda_i=1.34
+*** Iteration #11, mu_bar = -0.0026776033967009657, lambda_i=1.3639999999999999
+*** Iteration #12, mu_bar = -0.0025045348657637533, lambda_i=1.388
+*** Iteration #13, mu_bar = -0.0023399833901475865, lambda_i=1.412
+*** Iteration #14, mu_bar = -0.0021833074836261727, lambda_i=1.436
+*** Iteration #15, mu_bar = -0.002, lambda_i=1.46
+Time elapsed =0:00:48.011100
+ 
+Screen printout available also at: slurm-1019462.out

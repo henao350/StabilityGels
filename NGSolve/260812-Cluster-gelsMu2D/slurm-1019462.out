@@ -1,0 +1,28 @@
+slurmstepd: error: Unable to create TMPDIR [/data/tmp]: No such file or directory
+slurmstepd: error: Setting TMPDIR to /tmp
+Parámetros: 90 1.62 3 0.2 0.002
+L=90.0 [mm], d=1.62 [mm], order=3, phi0=0.2, mu_bar=-0.002
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 1.46, gel.mu_fun(lambda_target) = -0.0020339248681859015
+filename_suffix=_phi0=0.2_absMuBar=0.002
+nDoF = 16670
+mu_bar_end = -0.002
+filename=gridfunctions/result_gelsMu2D_phi0=0.2_absMuBar=0.002_order=3
+*** Iteration #0, mu_bar = -0.005415142736731723, lambda_i=1.1
+*** Iteration #1, mu_bar = -0.005078894213164102, lambda_i=1.124
+*** Iteration #2, mu_bar = -0.004765315821481065, lambda_i=1.1480000000000001
+*** Iteration #3, mu_bar = -0.004472263184466035, lambda_i=1.1720000000000002
+*** Iteration #4, mu_bar = -0.004197838530764865, lambda_i=1.196
+*** Iteration #5, mu_bar = -0.003940357588884698, lambda_i=1.22
+*** Iteration #6, mu_bar = -0.003698321530930996, lambda_i=1.244
+*** Iteration #7, mu_bar = -0.0034703931076992245, lambda_i=1.268
+*** Iteration #8, mu_bar = -0.003255376276994037, lambda_i=1.292
+*** Iteration #9, mu_bar = -0.003052198754817271, lambda_i=1.316
+*** Iteration #10, mu_bar = -0.0028598970214306872, lambda_i=1.34
+*** Iteration #11, mu_bar = -0.0026776033967009657, lambda_i=1.3639999999999999
+*** Iteration #12, mu_bar = -0.0025045348657637533, lambda_i=1.388
+*** Iteration #13, mu_bar = -0.0023399833901475865, lambda_i=1.412
+*** Iteration #14, mu_bar = -0.0021833074836261727, lambda_i=1.436
+*** Iteration #15, mu_bar = -0.002, lambda_i=1.46
+Time elapsed =0:00:48.011100
+ 
+Screen printout available also at: slurm-1019462.out

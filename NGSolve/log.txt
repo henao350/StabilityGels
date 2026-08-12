@@ -1,4 +1,4 @@
-    
+   
 Pendiente: 
 - Con el problema que ya sabemos que funciona (el cálculo de las 16 h), 
   aprendamos a calcularlo en el cluster
@@ -9,6 +9,9 @@ Pendiente:
 - En caso que funcione en el cluster, probar con otros valores de mu (ir acercándose al mu_bar crítico)
 
 ### VAMOS AQUÍ 
+
+[12/ago/26] rsync -avP Pedro:~/260812-Cluster-gelsMu2D ..
+
 [2/abr/26] Corregimos la definición de la función gel_3D.mu_fun
 - cambiar el código para hacer el cálculo con el W(F) correcto, incluyendo el potencial químico
       - modificar el código de tal forma que no comience con un G alto y lo vaya disminuyendo hasta llegar a gamma=0.001,

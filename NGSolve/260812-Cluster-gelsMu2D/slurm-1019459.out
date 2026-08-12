@@ -1,0 +1,7 @@
+slurmstepd: error: Unable to create TMPDIR [/data/tmp]: No such file or directory
+slurmstepd: error: Setting TMPDIR to /tmp
+Parámetros: 90 1.62 3 0.2 0.002
+  File "/mnt/beegfs/home/phernandez/260812-Cluster-gelsMu2D/gels2d_ChemicalPotential.py", line 135
+    lambda_list.append(self.gel.lambda_target)
+TabError: inconsistent use of tabs and spaces in indentation
+Screen printout available also at: slurm-1019459.out

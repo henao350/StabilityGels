@@ -1,0 +1,41 @@
+Instrucciones para correr NGsolve
+
+1. Crear un archivo con los parametros ver ejemplo to_execute2.txt
+2. modificar el script myarrayjob.sh
+3. enviar el job con el siguiente comando:
+	sbatch --array=1-7 myarrayjob.sh
+
+El comando anterior solicita 7 tareas y cada tarea se ejecuta con 16 cores en distintos nodos de kutral.
+Si mas tareas son necesarias se deben agregar mas parametros al archivo to_execute2.txt y luego incrementar --array=1-X
+
+4. Actualmente estamos usando el siguiente container 
+
+    singularity pull docker://ngsxfem/ngsolve:latest
+
+
+Happy computing!!!
+
+////////////
+
+Efectivamente es la arquitectura de la cpu en la que ha compilado el singularity.
+En este caso, todos los servidores de cómputo antiguo no tienen esta característica, por lo que al solicitar recursos a slurm, deben agregar la siguiente linea:
+
+#SBATCH --nodelist=toki-hm-1
+
+Puede solicitar nodos compatibles, dejo la lista de los posibles:
+
+    toki-hm-1
+    toki-hm-2
+    toki-hm-3
+    SRV03
+    tokikura
+    v100
+    dungu
+    wuruwe
+
+O directamente puede utilizar más de 16 cpus, para que ejecute en cualquiera de los nodos mencionados anteriormente.
+
+#SBATCH --cpus-per-task=20
+
+/////
+#SBATCH --nodelist=toki-hm-1,toki-hm-2,toki-hm-3,SRV03,tokikura,v100,dungu,wuruwe

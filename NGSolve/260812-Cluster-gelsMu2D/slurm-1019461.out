@@ -1,0 +1,17 @@
+slurmstepd: error: Unable to create TMPDIR [/data/tmp]: No such file or directory
+slurmstepd: error: Setting TMPDIR to /tmp
+Parámetros: 90 1.62 3 0.2 0.002
+L=90.0 [mm], d=1.62 [mm], order=3, phi0=0.2, mu_bar=-0.002
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 1.46, gel.mu_fun(lambda_target) = -0.0020339248681859015
+filename_suffix=_phi0=0.2_absMuBar=0.002
+nDoF = 16670
+mu_bar_end = -0.002
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/phernandez/260812-Cluster-gelsMu2D/gels2d_ChemicalPotential.py", line 217, in <module>
+    modelling.Solve_incremental_softening()    
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/beegfs/home/phernandez/260812-Cluster-gelsMu2D/gels2d_ChemicalPotential.py", line 135, in Solve_incremental_softening
+    lambda_list.append(self.gel.lambda_target)
+    ^^^^^^^^^^^^^^^^^^
+AttributeError: 'numpy.ndarray' object has no attribute 'append'
+Screen printout available also at: slurm-1019461.out
