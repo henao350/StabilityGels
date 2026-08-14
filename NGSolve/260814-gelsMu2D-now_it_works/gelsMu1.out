@@ -1,0 +1,171 @@
+L=90.0 [mm], d=1.62 [mm], order=3, phi0=0.2, mu_bar=-0.005
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 1.1298930828494025
+gel.Gfun(lambda_target) = 0.13721349978427086
+filename_suffix=_phi0=0.2_absMuBar=0.005
+nDoF = 16670
+G0=0.4356757029809118
+filename=gridfunctions/result_gelsMu2D_phi0=0.2_absMuBar=0.005_order=3
+*** Iteration #0, G = 0.4356757029809118, lambda_uniaxial=1.1
+Average energy density =  -15.17558
+Maximum vertical stretch:  1.099316685104108
+*** Iteration #1, G = 0.40975459308338635, lambda_uniaxial=1.1019928721899603
+Average energy density =  -15.17583
+Maximum vertical stretch:  1.1017753956120178
+*** Iteration #2, G = 0.38491094408505144, lambda_uniaxial=1.1039857443799204
+Average energy density =  -15.17608
+Maximum vertical stretch:  1.1037653509951264
+*** Iteration #3, G = 0.3610833790591087, lambda_uniaxial=1.1059786165698806
+Average energy density =  -15.17633
+Maximum vertical stretch:  1.1057579260060983
+*** Iteration #4, G = 0.33821505796504414, lambda_uniaxial=1.1079714887598406
+Average energy density =  -15.17658
+Maximum vertical stretch:  1.1077391495331372
+*** Iteration #5, G = 0.31625326648024743, lambda_uniaxial=1.1099643609498009
+Average energy density =  -15.17683
+Maximum vertical stretch:  1.1097307898472064
+*** Iteration #6, G = 0.2951490487456636, lambda_uniaxial=1.1119572331397611
+Average energy density =  -15.17708
+Maximum vertical stretch:  1.1117235265487693
+*** Iteration #7, G = 0.27485687864938707, lambda_uniaxial=1.1139501053297212
+Average energy density =  -15.17732
+Maximum vertical stretch:  1.1137163786696864
+*** Iteration #8, G = 0.25533436501208917, lambda_uniaxial=1.1159429775196814
+Average energy density =  -15.17757
+Maximum vertical stretch:  1.1156969454775996
+*** Iteration #9, G = 0.23654198666336385, lambda_uniaxial=1.1179358497096414
+Average energy density =  -15.17781
+Maximum vertical stretch:  1.1176884479594986
+*** Iteration #10, G = 0.21844285393285015, lambda_uniaxial=1.1199287218996017
+Average energy density =  -15.17806
+Maximum vertical stretch:  1.1196811622512708
+*** Iteration #11, G = 0.20100249353295252, lambda_uniaxial=1.121921594089562
+Average energy density =  -15.1783
+Maximum vertical stretch:  1.1216740108450312
+*** Iteration #12, G = 0.18418865420009134, lambda_uniaxial=1.123914466279522
+Average energy density =  -15.17854
+Maximum vertical stretch:  1.1236668743313052
+*** Iteration #13, G = 0.16797113079502013, lambda_uniaxial=1.1259073384694822
+Average energy density =  -15.17878
+Maximum vertical stretch:  1.125659739474752
+*** Iteration #14, G = 0.15232160484828314, lambda_uniaxial=1.1279002106594422
+Average energy density =  -15.17901
+Maximum vertical stretch:  1.1276395780508086
+*** Iteration #15, G = 0.13721349978333333, lambda_uniaxial=1.1298930828494025
+Average energy density =  -15.17925
+Maximum vertical stretch:  1.1298928246481608
+Time elapsed =0:00:49.262932
+
+L=90.0 [mm], d=1.62 [mm], order=3, phi0=0.2, mu_bar=-0.004
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 1.2143142892582413
+gel.Gfun(lambda_target) = 0.13721349978333425
+filename_suffix=_phi0=0.2_absMuBar=0.004
+nDoF = 16670
+G0=1.1543963961520263
+filename=gridfunctions/result_gelsMu2D_phi0=0.2_absMuBar=0.004_order=3
+*** Iteration #0, G = 1.1543963961520263, lambda_uniaxial=1.1
+Average energy density =  -15.29232
+Maximum vertical stretch:  1.0993382058720216
+*** Iteration #1, G = 1.01219158774685, lambda_uniaxial=1.1076209526172163
+Average energy density =  -15.29381
+Maximum vertical stretch:  1.1074332598415648
+*** Iteration #2, G = 0.8898650100058473, lambda_uniaxial=1.1152419052344322
+Average energy density =  -15.29527
+Maximum vertical stretch:  1.1150556997602692
+*** Iteration #3, G = 0.7836902565306768, lambda_uniaxial=1.1228628578516484
+Average energy density =  -15.29672
+Maximum vertical stretch:  1.1226668542619291
+*** Iteration #4, G = 0.6908123922922915, lambda_uniaxial=1.1304838104688644
+Average energy density =  -15.29815
+Maximum vertical stretch:  1.1302771937411271
+*** Iteration #5, G = 0.609007467980685, lambda_uniaxial=1.1381047630860806
+Average energy density =  -15.29955
+Maximum vertical stretch:  1.1378869372865723
+*** Iteration #6, G = 0.5365174954840959, lambda_uniaxial=1.1457257157032965
+Average energy density =  -15.30094
+Maximum vertical stretch:  1.1455075367728647
+*** Iteration #7, G = 0.47193463277663567, lambda_uniaxial=1.1533466683205127
+Average energy density =  -15.30231
+Maximum vertical stretch:  1.1531169594854318
+*** Iteration #8, G = 0.41411826952359587, lambda_uniaxial=1.1609676209377287
+Average energy density =  -15.30366
+Maximum vertical stretch:  1.1607254260212747
+*** Iteration #9, G = 0.3621346025198411, lambda_uniaxial=1.1685885735549448
+Average energy density =  -15.30499
+Maximum vertical stretch:  1.168345949707503
+*** Iteration #10, G = 0.3152118921967947, lambda_uniaxial=1.1762095261721608
+Average energy density =  -15.30629
+Maximum vertical stretch:  1.1759540811582103
+*** Iteration #11, G = 0.27270684957258906, lambda_uniaxial=1.183830478789377
+Average energy density =  -15.30758
+Maximum vertical stretch:  1.1835745721789375
+*** Iteration #12, G = 0.2340790521680514, lambda_uniaxial=1.191451431406593
+Average energy density =  -15.30885
+Maximum vertical stretch:  1.1911820020909796
+*** Iteration #13, G = 0.19887123726797873, lambda_uniaxial=1.1990723840238091
+Average energy density =  -15.31009
+Maximum vertical stretch:  1.1988024450621908
+*** Iteration #14, G = 0.1666939555672005, lambda_uniaxial=1.2066933366410253
+Average energy density =  -15.31132
+Maximum vertical stretch:  1.2064091328600377
+*** Iteration #15, G = 0.13721349978333333, lambda_uniaxial=1.2143142892582413
+Average energy density =  -15.31252
+Maximum vertical stretch:  1.2143139932224696
+Time elapsed =0:01:14.006563
+  
+L=90.0 [mm], d=1.62 [mm], order=3, phi0=0.2, mu_bar=-0.002
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 1.4656178266953543
+gel.Gfun(lambda_target) = 0.13721349978333983
+filename_suffix=_phi0=0.2_absMuBar=0.002
+nDoF = 16670
+G0=2.5918377323925736
+filename=gridfunctions/result_gelsMu2D_phi0=0.2_absMuBar=0.002_order=3
+*** Iteration #0, G = 2.5918377323925736, lambda_uniaxial=1.1
+Average energy density =  -15.52586
+Maximum vertical stretch:  1.1001268085434939
+*** Iteration #1, G = 1.9320798882191286, lambda_uniaxial=1.1243745217796903
+Average energy density =  -15.53391
+Maximum vertical stretch:  1.1242276748591136
+*** Iteration #2, G = 1.4963033122789868, lambda_uniaxial=1.1487490435593806
+Average energy density =  -15.54173
+Maximum vertical stretch:  1.1485847061389427
+*** Iteration #3, G = 1.1893431397969296, lambda_uniaxial=1.173123565339071
+Average energy density =  -15.54934
+Maximum vertical stretch:  1.172941266424086
+*** Iteration #4, G = 0.9630657913521169, lambda_uniaxial=1.1974980871187613
+Average energy density =  -15.55671
+Maximum vertical stretch:  1.197295843523967
+*** Iteration #5, G = 0.7905293659004321, lambda_uniaxial=1.2218726088984515
+Average energy density =  -15.56385
+Maximum vertical stretch:  1.2216594552527937
+*** Iteration #6, G = 0.6554910234117697, lambda_uniaxial=1.2462471306781417
+Average energy density =  -15.57076
+Maximum vertical stretch:  1.2460107618880485
+*** Iteration #7, G = 0.5475852705364044, lambda_uniaxial=1.270621652457832
+Average energy density =  -15.57744
+Maximum vertical stretch:  1.2703725289567078
+*** Iteration #8, G = 0.4598930955644256, lambda_uniaxial=1.2949961742375224
+Average energy density =  -15.58389
+Maximum vertical stretch:  1.2947337333184417
+*** Iteration #9, G = 0.3876245943710858, lambda_uniaxial=1.3193706960172127
+Average energy density =  -15.59011
+Maximum vertical stretch:  1.319094228737675
+*** Iteration #10, G = 0.32736234554728183, lambda_uniaxial=1.343745217796903
+Average energy density =  -15.59611
+Maximum vertical stretch:  1.343453973710542
+*** Iteration #11, G = 0.27660559263338336, lambda_uniaxial=1.3681197395765932
+Average energy density =  -15.60189
+Maximum vertical stretch:  1.367812925570069
+*** Iteration #12, G = 0.23348443978490813, lambda_uniaxial=1.3924942613562834
+Average energy density =  -15.60745
+Maximum vertical stretch:  1.3921710391909101
+*** Iteration #13, G = 0.19657445227041973, lambda_uniaxial=1.4168687831359739
+Average energy density =  -15.6128
+Maximum vertical stretch:  1.4165282667464407
+*** Iteration #14, G = 0.16477281844305547, lambda_uniaxial=1.441243304915664
+Average energy density =  -15.61795
+Maximum vertical stretch:  1.44088455743627
+*** Iteration #15, G = 0.13721349978333333, lambda_uniaxial=1.4656178266953543
+Average energy density =  -15.62289
+Maximum vertical stretch:  1.4656174229990129
+Time elapsed =0:01:33.091683
+ 
