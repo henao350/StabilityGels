@@ -1,0 +1,6 @@
+mesh_file=/tmp/meshPeriodic.vol
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/phernandez/260916-occ_periodic/test_mesh.py", line 4, in <module>
+    mesh = Mesh(mesh_file)
+           ^^^^^^^^^^^^^^^
+netgen.libngpy._meshing.NgException: Error opening file /tmp/meshPeriodic.vol

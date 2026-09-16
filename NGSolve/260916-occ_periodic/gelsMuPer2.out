@@ -1,0 +1,67 @@
+L=100.0 [mm], d=20.0 [mm], order=3, phi0=0.2, mu_bar=-0.006
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 1.0620056803316698
+gel.Gfun(lambda_target) = 0.1372134997834122
+filename_suffix=_phi0=0.2_absMuBar=0.006
+sum(fes.FreeDofs()) = 2682
+mu_bar_end = -0.006
+Iteration 0: lambda_uniaxial=1.03, mu_bar=-0.00654964107129134
+filename=test1_periodic_L100_d20_nIterations2/result_gelsMu2D_phi0=0.2_absMuBar=0.006_iter=00
+Average energy density =  -14.99263
+Maximum vertical stretch:  1.0298211274767024
+Iteration 1: lambda_uniaxial=1.0460028401658348, mu_bar=-0.006267671047537386
+filename=test1_periodic_L100_d20_nIterations2/result_gelsMu2D_phi0=0.2_absMuBar=0.006_iter=01
+Average energy density =  -15.02505
+Maximum vertical stretch:  1.045912793206988
+Iteration 2: lambda_uniaxial=1.0620056803316698, mu_bar=-0.006
+filename=test1_periodic_L100_d20_nIterations2/result_gelsMu2D_phi0=0.2_absMuBar=0.006_iter=02
+Average energy density =  -15.05642
+Maximum vertical stretch:  1.0619078105426403
+Time elapsed =0:00:09.967472
+ 
+Screen printout available also at: slurm-1028729.out
+L=100.0 [mm], d=20.0 [mm], order=3, phi0=0.2, mu_bar=-0.006
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 1.0620056803316698
+gel.Gfun(lambda_target) = 0.1372134997834122
+filename_suffix=_phi0=0.2_absMuBar=0.006
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/phernandez/260916-occ_periodic/gels2dMuPeriodic.py", line 58, in <module>
+    modelling.add_mesh(mesh_file)
+  File "/mnt/beegfs/home/phernandez/260916-occ_periodic/ClassGel2d.py", line 151, in add_mesh
+    self.mesh = Mesh(mesh_file)
+                ^^^^^^^^^^^^^^^
+ValueError: basic_string::resize
+Screen printout available also at: slurm-1028730.out
+L=100.0 [mm], d=20.0 [mm], order=3, phi0=0.2, mu_bar=-0.006
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 1.0620056803316698
+gel.Gfun(lambda_target) = 0.1372134997834122
+filename_suffix=_phi0=0.2_absMuBar=0.006
+sum(fes.FreeDofs()) = 2718
+mu_bar_end = -0.006
+Iteration 0: lambda_uniaxial=1.03, mu_bar=-0.00654964107129134
+filename=test2_dirichletx_L100_d20_nIterations1/result_gelsMu2D_phi0=0.2_absMuBar=0.006_iter=00
+Average energy density =  -14.99263
+Maximum vertical stretch:  1.0298211274767024
+Iteration 1: lambda_uniaxial=1.0620056803316698, mu_bar=-0.006
+filename=test2_dirichletx_L100_d20_nIterations1/result_gelsMu2D_phi0=0.2_absMuBar=0.006_iter=01
+Average energy density =  -15.05642
+Maximum vertical stretch:  1.061804501454298
+Time elapsed =0:00:05.978636
+ 
+Screen printout available also at: slurm-1028731.out
+L=100.0 [mm], d=20.0 [mm], order=3, phi0=0.2, mu_bar=-0.006
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 1.0620056803316698
+gel.Gfun(lambda_target) = 0.1372134997834122
+filename_suffix=_phi0=0.2_absMuBar=0.006
+sum(fes.FreeDofs()) = 2682
+mu_bar_end = -0.006
+Iteration 0: lambda_uniaxial=1.03, mu_bar=-0.00654964107129134
+filename=test3_periodic_L100_d20_nIterations1/result_gelsMu2D_phi0=0.2_absMuBar=0.006_iter=00
+Average energy density =  -14.99263
+Maximum vertical stretch:  1.0298211274767024
+Iteration 1: lambda_uniaxial=1.0620056803316698, mu_bar=-0.006
+filename=test3_periodic_L100_d20_nIterations1/result_gelsMu2D_phi0=0.2_absMuBar=0.006_iter=01
+Average energy density =  -15.05642
+Maximum vertical stretch:  1.061804501454298
+Time elapsed =0:00:06.292822
+ 
+Screen printout available also at: slurm-1028732.out\n###\n
