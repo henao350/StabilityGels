@@ -1,0 +1,13 @@
+Parámetros: 100 20 3 0.2 0.006
+L=100.0 [mm], d=20.0 [mm], order=3, phi0=0.2, mu_bar=-0.006
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 1.0620056803316698
+gel.Gfun(lambda_target) = 0.1372134997834122
+filename_suffix=_phi0=0.2_absMuBar=0.006
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/phernandez/260916-occ_periodic/gels2dMuPeriodic.py", line 58, in <module>
+    modelling.add_mesh(mesh_file)
+  File "/mnt/beegfs/home/phernandez/260916-occ_periodic/ClassGel2d.py", line 151, in add_mesh
+    self.mesh = Mesh(mesh_file)
+                ^^^^^^^^^^^^^^^
+ValueError: basic_string::resize
+Screen printout available also at: slurm-1028730.out

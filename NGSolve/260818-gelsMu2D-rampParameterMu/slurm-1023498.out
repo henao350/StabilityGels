@@ -1,0 +1,30 @@
+Parámetros: 90 1.62 3 0.2 0.005
+L=90.0 [mm], d=1.62 [mm], order=3, phi0=0.2, mu_bar=-0.005
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 1.129893082849405
+gel.Gfun(lambda_target) = 0.13721349978426747
+filename_suffix=_phi0=0.2_absMuBar=0.005
+nDoF = 16670
+mu_bar_end = -0.005
+Iteration 0: lambda_uniaxial=1.03, mu_bar=-0.00654964107129134
+filename=simulation02_a_nIterations4/result_gelsMu2D_phi0=0.2_absMuBar=0.005_iter=00
+Average energy density =  -14.99264
+Maximum vertical stretch:  1.0297899831694233
+Iteration 1: lambda_uniaxial=1.0549732707123511, mu_bar=-0.006115870439291502
+filename=simulation02_a_nIterations4/result_gelsMu2D_phi0=0.2_absMuBar=0.005_iter=01
+Average energy density =  -15.04278
+Maximum vertical stretch:  1.0547589311145922
+Iteration 2: lambda_uniaxial=1.0799465414247025, mu_bar=-0.005715235589307748
+filename=simulation02_a_nIterations4/result_gelsMu2D_phi0=0.2_absMuBar=0.005_iter=02
+Average energy density =  -15.09047
+Maximum vertical stretch:  1.0797208504317253
+Iteration 3: lambda_uniaxial=1.1049198121370538, mu_bar=-0.005344253211892676
+filename=simulation02_a_nIterations4/result_gelsMu2D_phi0=0.2_absMuBar=0.005_iter=03
+Average energy density =  -15.1359
+Maximum vertical stretch:  1.1046820801976176
+Iteration 4: lambda_uniaxial=1.129893082849405, mu_bar=-0.005
+filename=simulation02_a_nIterations4/result_gelsMu2D_phi0=0.2_absMuBar=0.005_iter=04
+Average energy density =  -15.17925
+Maximum vertical stretch:  1.129633989005762
+Time elapsed =0:01:31.759282
+ 
+Screen printout available also at: slurm-1023498.out

@@ -1,0 +1,111 @@
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.2.6 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/home/henao1/Dropbox/Zubiri/trabajo/00_research/Pedro/ngsolve_local/260818-gelsMu2D-rampParameterMu/gels2dMu.py", line 1, in <module>
+    from ClassGel2d import gel2d, Solve_gel_bonded, SolveNonlinearMinProblem
+  File "/home/henao1/Dropbox/Zubiri/trabajo/00_research/Pedro/ngsolve_local/260818-gelsMu2D-rampParameterMu/ClassGel2d.py", line 7, in <module>
+    import scipy.optimize
+  File "/home/henao1/anaconda3/lib/python3.12/site-packages/scipy/optimize/__init__.py", line 413, in <module>
+    from ._optimize import *
+  File "/home/henao1/anaconda3/lib/python3.12/site-packages/scipy/optimize/_optimize.py", line 35, in <module>
+    from scipy.linalg import cholesky, issymmetric, LinAlgError
+  File "/home/henao1/anaconda3/lib/python3.12/site-packages/scipy/linalg/__init__.py", line 203, in <module>
+    from ._misc import *
+  File "/home/henao1/anaconda3/lib/python3.12/site-packages/scipy/linalg/_misc.py", line 3, in <module>
+    from .blas import get_blas_funcs
+  File "/home/henao1/anaconda3/lib/python3.12/site-packages/scipy/linalg/blas.py", line 213, in <module>
+    from scipy.linalg import _fblas
+Traceback (most recent call last):
+  File "/home/henao1/anaconda3/lib/python3.12/site-packages/numpy/core/_multiarray_umath.py", line 44, in __getattr__
+    raise ImportError(msg)
+ImportError: 
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.2.6 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+
+Traceback (most recent call last):
+  File "/home/henao1/Dropbox/Zubiri/trabajo/00_research/Pedro/ngsolve_local/260818-gelsMu2D-rampParameterMu/gels2dMu.py", line 1, in <module>
+    from ClassGel2d import gel2d, Solve_gel_bonded, SolveNonlinearMinProblem
+  File "/home/henao1/Dropbox/Zubiri/trabajo/00_research/Pedro/ngsolve_local/260818-gelsMu2D-rampParameterMu/ClassGel2d.py", line 7, in <module>
+    import scipy.optimize
+  File "/home/henao1/anaconda3/lib/python3.12/site-packages/scipy/optimize/__init__.py", line 413, in <module>
+    from ._optimize import *
+  File "/home/henao1/anaconda3/lib/python3.12/site-packages/scipy/optimize/_optimize.py", line 35, in <module>
+    from scipy.linalg import cholesky, issymmetric, LinAlgError
+  File "/home/henao1/anaconda3/lib/python3.12/site-packages/scipy/linalg/__init__.py", line 203, in <module>
+    from ._misc import *
+  File "/home/henao1/anaconda3/lib/python3.12/site-packages/scipy/linalg/_misc.py", line 3, in <module>
+    from .blas import get_blas_funcs
+  File "/home/henao1/anaconda3/lib/python3.12/site-packages/scipy/linalg/blas.py", line 213, in <module>
+    from scipy.linalg import _fblas
+ImportError: numpy.core.multiarray failed to import
+L=90.0 [mm], d=1.62 [mm], order=3, phi0=0.2, mu_bar=-0.005
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 1.1298930828494025
+gel.Gfun(lambda_target) = 0.13721349978427086
+filename_suffix=_phi0=0.2_absMuBar=0.005
+nDoF = 16670
+mu_bar_end = -0.005
+Iteration 0: lambda_uniaxial=1.03, mu_bar=-0.00654964107129134
+filename=simulation02/result_gelsMu2D_phi0=0.2_absMuBar=0.005_iter=00
+Average energy density =  -14.99264
+Maximum vertical stretch:  1.029789983169423
+Iteration 1: lambda_uniaxial=1.0549732707123507, mu_bar=-0.0061158704392915465
+filename=simulation02/result_gelsMu2D_phi0=0.2_absMuBar=0.005_iter=01
+Average energy density =  -15.04278
+Maximum vertical stretch:  1.0547589311145897
+Iteration 2: lambda_uniaxial=1.0799465414247011, mu_bar=-0.0057152355893077735
+filename=simulation02/result_gelsMu2D_phi0=0.2_absMuBar=0.005_iter=02
+Average energy density =  -15.09047
+Maximum vertical stretch:  1.0797208504317233
+Iteration 3: lambda_uniaxial=1.1049198121370518, mu_bar=-0.0053442532118925775
+filename=simulation02/result_gelsMu2D_phi0=0.2_absMuBar=0.005_iter=03
+Average energy density =  -15.1359
+Maximum vertical stretch:  1.1046820801976245
+Iteration 4: lambda_uniaxial=1.1298930828494025, mu_bar=-0.005
+filename=simulation02/result_gelsMu2D_phi0=0.2_absMuBar=0.005_iter=04
+Average energy density =  -15.17925
+Maximum vertical stretch:  1.129633989005762
+Time elapsed =0:00:34.617249
+ 
+L=90.0 [mm], d=1.62 [mm], order=3, phi0=0.2, mu_bar=-0.005
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 1.129893082849405
+gel.Gfun(lambda_target) = 0.13721349978426747
+filename_suffix=_phi0=0.2_absMuBar=0.005
+nDoF = 16670
+mu_bar_end = -0.005
+Iteration 0: lambda_uniaxial=1.03, mu_bar=-0.00654964107129134
+filename=simulation02_a_nIterations4/result_gelsMu2D_phi0=0.2_absMuBar=0.005_iter=00
+Average energy density =  -14.99264
+Maximum vertical stretch:  1.0297899831694233
+Iteration 1: lambda_uniaxial=1.0549732707123511, mu_bar=-0.006115870439291502
+filename=simulation02_a_nIterations4/result_gelsMu2D_phi0=0.2_absMuBar=0.005_iter=01
+Average energy density =  -15.04278
+Maximum vertical stretch:  1.0547589311145922
+Iteration 2: lambda_uniaxial=1.0799465414247025, mu_bar=-0.005715235589307748
+filename=simulation02_a_nIterations4/result_gelsMu2D_phi0=0.2_absMuBar=0.005_iter=02
+Average energy density =  -15.09047
+Maximum vertical stretch:  1.0797208504317253
+Iteration 3: lambda_uniaxial=1.1049198121370538, mu_bar=-0.005344253211892676
+filename=simulation02_a_nIterations4/result_gelsMu2D_phi0=0.2_absMuBar=0.005_iter=03
+Average energy density =  -15.1359
+Maximum vertical stretch:  1.1046820801976176
+Iteration 4: lambda_uniaxial=1.129893082849405, mu_bar=-0.005
+filename=simulation02_a_nIterations4/result_gelsMu2D_phi0=0.2_absMuBar=0.005_iter=04
+Average energy density =  -15.17925
+Maximum vertical stretch:  1.129633989005762
+Time elapsed =0:01:31.759282
+ 
+Screen printout available also at: slurm-1023498.out

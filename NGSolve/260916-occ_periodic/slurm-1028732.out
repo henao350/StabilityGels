@@ -1,0 +1,18 @@
+Parámetros: 100 20 3 0.2 0.006
+L=100.0 [mm], d=20.0 [mm], order=3, phi0=0.2, mu_bar=-0.006
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 1.0620056803316698
+gel.Gfun(lambda_target) = 0.1372134997834122
+filename_suffix=_phi0=0.2_absMuBar=0.006
+sum(fes.FreeDofs()) = 2682
+mu_bar_end = -0.006
+Iteration 0: lambda_uniaxial=1.03, mu_bar=-0.00654964107129134
+filename=test3_periodic_L100_d20_nIterations1/result_gelsMu2D_phi0=0.2_absMuBar=0.006_iter=00
+Average energy density =  -14.99263
+Maximum vertical stretch:  1.0298211274767024
+Iteration 1: lambda_uniaxial=1.0620056803316698, mu_bar=-0.006
+filename=test3_periodic_L100_d20_nIterations1/result_gelsMu2D_phi0=0.2_absMuBar=0.006_iter=01
+Average energy density =  -15.05642
+Maximum vertical stretch:  1.061804501454298
+Time elapsed =0:00:06.292822
+ 
+Screen printout available also at: slurm-1028732.out\n###\n
