@@ -1,0 +1,28 @@
+mesh_file=meshes/meshPeriodic.vol
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/phernandez/260916-occ_periodic/test_mesh.py", line 4, in <module>
+    mesh = Mesh(mesh_file)
+           ^^^^^^^^^^^^^^^
+ValueError: basic_string::resize
+mesh_file=meshes/meshPeriodic.vol
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/phernandez/260916-occ_periodic/test_mesh.py", line 4, in <module>
+    mesh = Mesh(mesh_file)
+           ^^^^^^^^^^^^^^^
+ValueError: basic_string::resize
+mesh_file=mesh_test.vol
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/phernandez/260916-occ_periodic/test_mesh.py", line 4, in <module>
+    mesh = Mesh(mesh_file)
+           ^^^^^^^^^^^^^^^
+ValueError: basic_string::resize
+mesh_file=meshes/mesh.vol
+mesh_file=meshes/meshPeriodic.vol
+mesh_file=meshes/meshPeriodic.vol
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/phernandez/260916-occ_periodic/test_mesh.py", line 4, in <module>
+    mesh = Mesh(mesh_file)
+           ^^^^^^^^^^^^^^^
+ValueError: basic_string::resize
+mesh_file=meshes/meshPeriodic.vol
+mesh_file=meshes/meshPeriodic.vol
