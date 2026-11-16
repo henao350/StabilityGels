@@ -1,0 +1,44 @@
+Start time: 2026-11-16 00:47:25
+L=100.0 [mm], d=20.0 [mm], order=3, phi0=1.0, mu_bar=-0.09
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 2.0108852090963287
+gel.Gfun(lambda_target) = 0.13721349978333194
+filename_suffix=_phi0=1.0_absMuBar=0.090
+mesh_file=meshes/meshPeriodic.vol
+sum(fes.FreeDofs()) = 29148
+mu_bar_end = -0.09
+Iteration 0: lambda_uniaxial=1.03, mu_bar=-2.1881221019662047
+filename=test202611160047/result_gelsMu2D_phi0=1.0_absMuBar=0.090_iter=00
+Average energy density =  nan
+Maximum vertical stretch:  nan
+Iteration 1: lambda_uniaxial=1.128088520909633, mu_bar=-0.9745169293896314
+filename=test202611160047/result_gelsMu2D_phi0=1.0_absMuBar=0.090_iter=01
+Average energy density =  nan
+Maximum vertical stretch:  nan
+Iteration 2: lambda_uniaxial=1.2261770418192657, mu_bar=-0.6083174783546272
+filename=test202611160047/result_gelsMu2D_phi0=1.0_absMuBar=0.090_iter=02
+Average energy density =  nan
+Maximum vertical stretch:  nan
+Time elapsed =0:02:20.127725
+ 
+Start time: 2026-11-16 00:53:02
+L=100.0 [mm], d=20.0 [mm], order=3, phi0=1.0, mu_bar=-0.09
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 2.0108852090963287
+gel.Gfun(lambda_target) = 0.13721349978333194
+filename_suffix=_phi0=1.0_absMuBar=0.090
+mesh_file=meshes/meshPeriodic.vol
+sum(fes.FreeDofs()) = 29148
+mu_bar_end = -0.09
+Iteration 0: lambda_uniaxial=1.01, mu_bar=-3.23285986486694
+filename=test202611160053/result_gelsMu2D_phi0=1.0_absMuBar=0.090_iter=00
+Average energy density =  nan
+Maximum vertical stretch:  nan
+Iteration 1: lambda_uniaxial=1.0200088520909634, mu_bar=-2.5664843701088342
+filename=test202611160053/result_gelsMu2D_phi0=1.0_absMuBar=0.090_iter=01
+Average energy density =  nan
+Maximum vertical stretch:  nan
+Iteration 2: lambda_uniaxial=1.0300177041819265, mu_bar=-2.1875789393550558
+filename=test202611160053/result_gelsMu2D_phi0=1.0_absMuBar=0.090_iter=02
+Average energy density =  nan
+Maximum vertical stretch:  nan
+Time elapsed =0:02:12.327078
+ 

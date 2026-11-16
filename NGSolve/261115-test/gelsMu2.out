@@ -1,0 +1,37 @@
+  File "/home/henao1/Dropbox/Zubiri/trabajo/00_research/Pedro/251030-github/StabilityGels/NGSolve/261115-test/gels2dMu.py", line 26
+    simulation_name = 'test20261115_mesh_grading''
+                                                 ^
+SyntaxError: unterminated string literal (detected at line 26)
+L=90.0 [mm], d=1.62 [mm], order=3, phi0=0.2, mu_bar=-0.005
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 1.1298930828494025
+gel.Gfun(lambda_target) = 0.13721349978427086
+filename_suffix=_phi0=0.2_absMuBar=0.005
+mesh_file=meshes/meshPeriodic.vol
+sum(fes.FreeDofs()) = 22236
+mu_bar_end = -0.005
+Iteration 0: lambda_uniaxial=1.03, mu_bar=-0.00654964107129134
+filename=test20261115_mesh_grading/result_gelsMu2D_phi0=0.2_absMuBar=0.005_iter=00
+Average energy density =  -102.83014
+Maximum vertical stretch:  6.356920539979648
+Iteration 1: lambda_uniaxial=1.0309989308284941, mu_bar=-0.0065316056618804595
+filename=test20261115_mesh_grading/result_gelsMu2D_phi0=0.2_absMuBar=0.005_iter=01
+Average energy density =  -102.84424
+Maximum vertical stretch:  6.363733467689885
+Iteration 2: lambda_uniaxial=1.031997861656988, mu_bar=-0.006513629324182013
+filename=test20261115_mesh_grading/result_gelsMu2D_phi0=0.2_absMuBar=0.005_iter=02
+Average energy density =  -102.85831
+Maximum vertical stretch:  6.369894644108759
+Iteration 3: lambda_uniaxial=1.0329967924854822, mu_bar=-0.006495711786003344
+filename=test20261115_mesh_grading/result_gelsMu2D_phi0=0.2_absMuBar=0.005_iter=03
+Average energy density =  -102.87234
+Maximum vertical stretch:  6.376060519418716
+Iteration 4: lambda_uniaxial=1.033995723313976, mu_bar=-0.00647785277670762
+filename=test20261115_mesh_grading/result_gelsMu2D_phi0=0.2_absMuBar=0.005_iter=04
+Average energy density =  -102.88635
+Maximum vertical stretch:  6.382226757402214
+Iteration 5: lambda_uniaxial=1.0349946541424702, mu_bar=-0.006460052027203359
+filename=test20261115_mesh_grading/result_gelsMu2D_phi0=0.2_absMuBar=0.005_iter=05
+Average energy density =  -102.90033
+Maximum vertical stretch:  6.388393023255538
+Time elapsed =0:00:26.144722
+ 

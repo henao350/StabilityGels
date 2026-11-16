@@ -1,0 +1,33 @@
+L=90.0 [mm], d=1.62 [mm], order=3, phi0=0.2, mu_bar=-0.002
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 1.4656178266953543
+gel.Gfun(lambda_target) = 0.13721349978333983
+filename_suffix=_phi0=0.2_absMuBar=0.002
+mesh_file=meshes/meshPeriodic.vol
+sum(fes.FreeDofs()) = 22236
+mu_bar_end = -0.002
+Iteration 0: lambda_uniaxial=1.03, mu_bar=-0.00654964107129134
+filename=test202611151612_mesh_grading_absMuBar_0.002/result_gelsMu2D_phi0=0.2_absMuBar=0.002_iter=00
+Average energy density =  -102.83014
+Maximum vertical stretch:  6.356920539979648
+Iteration 1: lambda_uniaxial=1.0343561782669535, mu_bar=-0.00647142283650501
+filename=test202611151612_mesh_grading_absMuBar_0.002/result_gelsMu2D_phi0=0.2_absMuBar=0.002_iter=01
+Average energy density =  -102.8914
+Maximum vertical stretch:  6.38444956764913
+Iteration 2: lambda_uniaxial=1.0387123565339071, mu_bar=-0.006394310728575221
+filename=test202611151612_mesh_grading_absMuBar_0.002/result_gelsMu2D_phi0=0.2_absMuBar=0.002_iter=02
+Average energy density =  -102.95211
+Maximum vertical stretch:  6.411324976565394
+Iteration 3: lambda_uniaxial=1.0430685348008606, mu_bar=-0.006318282814261635
+filename=test202611151612_mesh_grading_absMuBar_0.002/result_gelsMu2D_phi0=0.2_absMuBar=0.002_iter=03
+Average energy density =  -103.01227
+Maximum vertical stretch:  6.438214816370796
+Iteration 4: lambda_uniaxial=1.0474247130678143, mu_bar=-0.0062433176978774485
+filename=test202611151612_mesh_grading_absMuBar_0.002/result_gelsMu2D_phi0=0.2_absMuBar=0.002_iter=04
+Average energy density =  -103.0719
+Maximum vertical stretch:  6.465104935476257
+Iteration 5: lambda_uniaxial=1.0517808913347677, mu_bar=-0.006169394505655326
+filename=test202611151612_mesh_grading_absMuBar_0.002/result_gelsMu2D_phi0=0.2_absMuBar=0.002_iter=05
+Average energy density =  -103.13101
+Maximum vertical stretch:  6.491995057159857
+Time elapsed =0:00:42.409190
+ 
