@@ -62,7 +62,9 @@ if __name__ == '__main__':
     #
     modelling = Solve_gel_bonded (gel, order=order)
     #
-    mesh_file = 'meshes/meshPeriodic.vol'
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    mesh_file = os.path.join(base_dir, "meshes", "meshPeriodic.vol")
+    # mesh_file = 'meshes/meshPeriodic.vol'
     modelling.add_mesh(mesh_file)
     # Initialize solver
     solver = modelling
