@@ -1,0 +1,419 @@
+Parámetros: 100 20 3 0.9 0.09
+Start time: 2026-11-17 14:29:07
+L=100.0 [mm], d=20.0 [mm], order=3, phi0=0.9, mu_bar=-0.09
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 1.8113647170633307
+gel.Gfun(lambda_target) = 0.13721349978334646
+filename_suffix=_phi0=0.9_absMuBar=0.090
+File /mnt/beegfs/home/duvan.henao/gels/261117_test_phi0_1/meshes/meshPeriodic.vol does exist :-)
+mesh_file=/mnt/beegfs/home/duvan.henao/gels/261117_test_phi0_1/meshes/meshPeriodic.vol
+sum(fes.FreeDofs()) = 29148
+mu_bar_end = -0.09
+Iteration 0: lambda_uniaxial=1.01, mu_bar=-1.008476992813596
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=00
+Average energy density =  -12.86422
+Maximum vertical stretch:  1.0099391035707066
+Iteration 1: lambda_uniaxial=1.0180136471706334, mu_bar=-0.9580395551848392
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=01
+Average energy density =  -13.65281
+Maximum vertical stretch:  1.0179658383527832
+Iteration 2: lambda_uniaxial=1.0260272943412667, mu_bar=-0.9119361235992032
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=02
+Average energy density =  -14.42436
+Maximum vertical stretch:  1.025979837725488
+Iteration 3: lambda_uniaxial=1.0340409415118998, mu_bar=-0.8696035758574765
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=03
+Average energy density =  -15.17936
+Maximum vertical stretch:  1.0339937368093146
+Iteration 4: lambda_uniaxial=1.0420545886825332, mu_bar=-0.830577978197216
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=04
+Average energy density =  -15.9183
+Maximum vertical stretch:  1.0420076208050075
+Iteration 5: lambda_uniaxial=1.0500682358531666, mu_bar=-0.7944727441232069
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=05
+Average energy density =  -16.64167
+Maximum vertical stretch:  1.0500214924199407
+Iteration 6: lambda_uniaxial=1.0580818830238, mu_bar=-0.7609624842023232
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=06
+Average energy density =  -17.34989
+Maximum vertical stretch:  1.0580353533854536
+Iteration 7: lambda_uniaxial=1.0660955301944333, mu_bar=-0.7297708556758117
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=07
+Average energy density =  -18.04342
+Maximum vertical stretch:  1.0660492050953385
+Iteration 8: lambda_uniaxial=1.0741091773650664, mu_bar=-0.700661279452209
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=08
+Average energy density =  -18.72268
+Maximum vertical stretch:  1.074063048688115
+Iteration 9: lambda_uniaxial=1.0821228245356997, mu_bar=-0.6734297492780322
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=09
+Average energy density =  -19.38805
+Maximum vertical stretch:  1.0820768851044333
+Iteration 10: lambda_uniaxial=1.090136471706333, mu_bar=-0.6478991918634391
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=10
+Average energy density =  -20.03995
+Maximum vertical stretch:  1.0900907151295385
+Iteration 11: lambda_uniaxial=1.0981501188769665, mu_bar=-0.6239149933356506
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=11
+Average energy density =  -20.67873
+Maximum vertical stretch:  1.098104539425146
+Iteration 12: lambda_uniaxial=1.1061637660475996, mu_bar=-0.6013414142571527
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=12
+Average energy density =  -21.30477
+Maximum vertical stretch:  1.1061183585537144
+Iteration 13: lambda_uniaxial=1.114177413218233, mu_bar=-0.5800586896698563
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=13
+Average energy density =  -21.91842
+Maximum vertical stretch:  1.1141321729971334
+Iteration 14: lambda_uniaxial=1.1221910603888663, mu_bar=-0.5599606630147979
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=14
+Average energy density =  -22.52001
+Maximum vertical stretch:  1.1221459831712914
+Iteration 15: lambda_uniaxial=1.1302047075594996, mu_bar=-0.5409528403006632
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=15
+Average energy density =  -23.10987
+Maximum vertical stretch:  1.130159789437547
+Iteration 16: lambda_uniaxial=1.138218354730133, mu_bar=-0.5229507781362648
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=16
+Average energy density =  -23.68832
+Maximum vertical stretch:  1.1381735921118419
+Iteration 17: lambda_uniaxial=1.1462320019007661, mu_bar=-0.5058787392667874
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=17
+Average energy density =  -24.25565
+Maximum vertical stretch:  1.1461873914720146
+Iteration 18: lambda_uniaxial=1.1542456490713995, mu_bar=-0.48966856414341214
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=18
+Average energy density =  -24.81218
+Maximum vertical stretch:  1.154201187763717
+Iteration 19: lambda_uniaxial=1.1622592962420328, mu_bar=-0.4742587182462277
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=19
+Average energy density =  -25.35817
+Maximum vertical stretch:  1.162214981205215
+Iteration 20: lambda_uniaxial=1.1702729434126662, mu_bar=-0.459593483374056
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=20
+Average energy density =  -25.8939
+Maximum vertical stretch:  1.1702287719913786
+Iteration 21: lambda_uniaxial=1.1782865905832995, mu_bar=-0.44562226762171625
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=21
+Average energy density =  -26.41965
+Maximum vertical stretch:  1.1782425602969184
+Iteration 22: lambda_uniaxial=1.1863002377539327, mu_bar=-0.4322990137932503
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=22
+Average energy density =  -26.93566
+Maximum vertical stretch:  1.1862563462791256
+Iteration 23: lambda_uniaxial=1.194313884924566, mu_bar=-0.41958168991648787
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=23
+Average energy density =  -27.44219
+Maximum vertical stretch:  1.1942701300801395
+Iteration 24: lambda_uniaxial=1.2023275320951994, mu_bar=-0.4074318485988469
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=24
+Average energy density =  -27.93948
+Maximum vertical stretch:  1.202283911828868
+Iteration 25: lambda_uniaxial=1.2103411792658327, mu_bar=-0.3958142443948651
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=25
+Average energy density =  -28.42776
+Maximum vertical stretch:  1.2102976916426025
+Iteration 26: lambda_uniaxial=1.218354826436466, mu_bar=-0.3846965002905457
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=26
+Average energy density =  -28.90725
+Maximum vertical stretch:  1.2183114696284068
+Iteration 27: lambda_uniaxial=1.2263684736070992, mu_bar=-0.3740488159591517
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=27
+Average energy density =  -29.37818
+Maximum vertical stretch:  1.2263252458842862
+Iteration 28: lambda_uniaxial=1.2343821207777326, mu_bar=-0.36384371169174345
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=28
+Average energy density =  -29.84076
+Maximum vertical stretch:  1.234339020500205
+Iteration 29: lambda_uniaxial=1.242395767948366, mu_bar=-0.3540558029176863
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=29
+Average energy density =  -30.29519
+Maximum vertical stretch:  1.2423527935589562
+Iteration 30: lambda_uniaxial=1.2504094151189993, mu_bar=-0.3446616010548588
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=30
+Average energy density =  -30.74167
+Maximum vertical stretch:  1.2503665651369194
+Iteration 31: lambda_uniaxial=1.2584230622896326, mu_bar=-0.33563933710455846
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=31
+Average energy density =  -31.1804
+Maximum vertical stretch:  1.2583803353047163
+Iteration 32: lambda_uniaxial=1.2664367094602658, mu_bar=-0.32696880496182196
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=32
+Average energy density =  -31.61156
+Maximum vertical stretch:  1.2663941041277846
+Iteration 33: lambda_uniaxial=1.2744503566308991, mu_bar=-0.31863122187134435
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=33
+Average energy density =  -32.03532
+Maximum vertical stretch:  1.2744078716668805
+Iteration 34: lambda_uniaxial=1.2824640038015325, mu_bar=-0.3106091038407634
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=34
+Average energy density =  -32.45188
+Maximum vertical stretch:  1.2824216379785223
+Iteration 35: lambda_uniaxial=1.2904776509721656, mu_bar=-0.3028861541412897
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=35
+Average energy density =  -32.86139
+Maximum vertical stretch:  1.2904354031153749
+Iteration 36: lambda_uniaxial=1.2984912981427992, mu_bar=-0.2954471632921239
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=36
+Average energy density =  -33.26403
+Maximum vertical stretch:  1.2984491671265999
+Iteration 37: lambda_uniaxial=1.3065049453134323, mu_bar=-0.2882779191490843
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=37
+Average energy density =  -33.65995
+Maximum vertical stretch:  1.3064629300581572
+Iteration 38: lambda_uniaxial=1.3145185924840657, mu_bar=-0.28136512590681934
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=38
+Average energy density =  -34.04931
+Maximum vertical stretch:  1.3144766919530808
+Iteration 39: lambda_uniaxial=1.322532239654699, mu_bar=-0.2746963309839773
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=39
+Average energy density =  -34.43226
+Maximum vertical stretch:  1.3224904528517183
+Iteration 40: lambda_uniaxial=1.3305458868253321, mu_bar=-0.26825985889660425
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=40
+Average energy density =  -34.80894
+Maximum vertical stretch:  1.3305042127919624
+Iteration 41: lambda_uniaxial=1.3385595339959655, mu_bar=-0.26204475134088406
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=41
+Average energy density =  -35.17951
+Maximum vertical stretch:  1.338517971809387
+Iteration 42: lambda_uniaxial=1.3465731811665989, mu_bar=-0.25604071280537044
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=42
+Average energy density =  -35.54409
+Maximum vertical stretch:  1.3465317299375401
+Iteration 43: lambda_uniaxial=1.3545868283372322, mu_bar=-0.2502380611177724
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=43
+Average energy density =  -35.90282
+Maximum vertical stretch:  1.3545454872079838
+Iteration 44: lambda_uniaxial=1.3626004755078656, mu_bar=-0.24462768240439756
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=44
+Average energy density =  -36.25584
+Maximum vertical stretch:  1.3625592436504967
+Iteration 45: lambda_uniaxial=1.3706141226784987, mu_bar=-0.23920099000333928
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=45
+Average energy density =  -36.60327
+Maximum vertical stretch:  1.3705729992931919
+Iteration 46: lambda_uniaxial=1.378627769849132, mu_bar=-0.23394988692694252
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=46
+Average energy density =  -36.94522
+Maximum vertical stretch:  1.378586754162637
+Iteration 47: lambda_uniaxial=1.3866414170197654, mu_bar=-0.2288667315163172
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=47
+Average energy density =  -37.28184
+Maximum vertical stretch:  1.3866005082839545
+Iteration 48: lambda_uniaxial=1.3946550641903988, mu_bar=-0.223944305971675
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=48
+Average energy density =  -37.61322
+Maximum vertical stretch:  1.3946142616809274
+Iteration 49: lambda_uniaxial=1.402668711361032, mu_bar=-0.21917578747802843
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=49
+Average energy density =  -37.93948
+Maximum vertical stretch:  1.402628014376082
+Iteration 50: lambda_uniaxial=1.4106823585316652, mu_bar=-0.2145547216769992
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=50
+Average energy density =  -38.26073
+Maximum vertical stretch:  1.4106417663907753
+Iteration 51: lambda_uniaxial=1.4186960057022986, mu_bar=-0.21007499826279316
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=51
+Average energy density =  -38.57709
+Maximum vertical stretch:  1.4186555177452642
+Iteration 52: lambda_uniaxial=1.426709652872932, mu_bar=-0.2057308285043604
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=52
+Average energy density =  -38.88865
+Maximum vertical stretch:  1.4266692684587714
+Iteration 53: lambda_uniaxial=1.4347233000435653, mu_bar=-0.20151672451681396
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=53
+Average energy density =  -39.19551
+Maximum vertical stretch:  1.4346830185495647
+Iteration 54: lambda_uniaxial=1.4427369472141987, mu_bar=-0.19742748012371947
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=54
+Average energy density =  -39.49778
+Maximum vertical stretch:  1.4426967680349958
+Iteration 55: lambda_uniaxial=1.4507505943848318, mu_bar=-0.19345815316823303
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=55
+Average energy density =  -39.79555
+Maximum vertical stretch:  1.4507105169315637
+Iteration 56: lambda_uniaxial=1.4587642415554651, mu_bar=-0.18960404914552445
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=56
+Average energy density =  -40.08891
+Maximum vertical stretch:  1.458724265254962
+Iteration 57: lambda_uniaxial=1.4667778887260985, mu_bar=-0.18586070604173996
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=57
+Average energy density =  -40.37796
+Maximum vertical stretch:  1.466738013020127
+Iteration 58: lambda_uniaxial=1.4747915358967318, mu_bar=-0.1822238802761197
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=58
+Average energy density =  -40.66278
+Maximum vertical stretch:  1.4747517602412767
+Iteration 59: lambda_uniaxial=1.4828051830673652, mu_bar=-0.1786895336529907
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=59
+Average energy density =  -40.94347
+Maximum vertical stretch:  1.4827655069319525
+Iteration 60: lambda_uniaxial=1.4908188302379983, mu_bar=-0.1752538212393518
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=60
+Average energy density =  -41.2201
+Maximum vertical stretch:  1.4907792531050554
+Iteration 61: lambda_uniaxial=1.4988324774086317, mu_bar=-0.17191308009178558
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=61
+Average energy density =  -41.49275
+Maximum vertical stretch:  1.4987929987728799
+Iteration 62: lambda_uniaxial=1.506846124579265, mu_bar=-0.16866381876360062
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=62
+Average energy density =  -41.76151
+Maximum vertical stretch:  1.5068067439471453
+Iteration 63: lambda_uniaxial=1.5148597717498982, mu_bar=-0.16550270752951024
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=63
+Average energy density =  -42.02646
+Maximum vertical stretch:  1.5148204886390253
+Iteration 64: lambda_uniaxial=1.5228734189205317, mu_bar=-0.16242656927090218
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=64
+Average energy density =  -42.28767
+Maximum vertical stretch:  1.5228342328591773
+Iteration 65: lambda_uniaxial=1.5308870660911649, mu_bar=-0.1594323709699019
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=65
+Average energy density =  -42.54521
+Maximum vertical stretch:  1.5308479766177652
+Iteration 66: lambda_uniaxial=1.5389007132617982, mu_bar=-0.15651721576505767
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=66
+Average energy density =  -42.79916
+Maximum vertical stretch:  1.5388617199244863
+Iteration 67: lambda_uniaxial=1.5469143604324316, mu_bar=-0.1536783355256471
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=67
+Average energy density =  -43.04958
+Maximum vertical stretch:  1.5468754627885914
+Iteration 68: lambda_uniaxial=1.5549280076030647, mu_bar=-0.15091308390534858
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=68
+Average energy density =  -43.29655
+Maximum vertical stretch:  1.5548892052189092
+Iteration 69: lambda_uniaxial=1.5629416547736983, mu_bar=-0.14821892983941098
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=69
+Average energy density =  -43.54014
+Maximum vertical stretch:  1.5629029472238625
+Iteration 70: lambda_uniaxial=1.5709553019443314, mu_bar=-0.14559345145251018
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=70
+Average energy density =  -43.7804
+Maximum vertical stretch:  1.5709166888114887
+Iteration 71: lambda_uniaxial=1.5789689491149648, mu_bar=-0.14303433034724106
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=71
+Average energy density =  -44.0174
+Maximum vertical stretch:  1.5789304299894589
+Iteration 72: lambda_uniaxial=1.5869825962855981, mu_bar=-0.14053934624570708
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=72
+Average energy density =  -44.25121
+Maximum vertical stretch:  1.586944170765091
+Iteration 73: lambda_uniaxial=1.5949962434562313, mu_bar=-0.13810637195892655
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=73
+Average energy density =  -44.48188
+Maximum vertical stretch:  1.5949579111453676
+Iteration 74: lambda_uniaxial=1.6030098906268648, mu_bar=-0.13573336866084307
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=74
+Average energy density =  -44.70947
+Maximum vertical stretch:  1.6029716511369507
+Iteration 75: lambda_uniaxial=1.611023537797498, mu_bar=-0.13341838144559492
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=75
+Average energy density =  -44.93405
+Maximum vertical stretch:  1.6109853907461935
+Iteration 76: lambda_uniaxial=1.6190371849681313, mu_bar=-0.13115953514839984
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=76
+Average energy density =  -45.15566
+Maximum vertical stretch:  1.6189991299791562
+Iteration 77: lambda_uniaxial=1.6270508321387647, mu_bar=-0.12895503041196404
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=77
+Average energy density =  -45.37437
+Maximum vertical stretch:  1.627012868841615
+Iteration 78: lambda_uniaxial=1.6350644793093978, mu_bar=-0.12680313998173345
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=78
+Average energy density =  -45.59022
+Maximum vertical stretch:  1.6350266073390778
+Iteration 79: lambda_uniaxial=1.6430781264800314, mu_bar=-0.12470220521459693
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=79
+Average energy density =  -45.80327
+Maximum vertical stretch:  1.643040345476792
+Iteration 80: lambda_uniaxial=1.6510917736506645, mu_bar=-0.12265063278682718
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=80
+Average energy density =  -46.01357
+Maximum vertical stretch:  1.6510540832597553
+Iteration 81: lambda_uniaxial=1.6591054208212979, mu_bar=-0.1206468915881197
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=81
+Average energy density =  -46.22117
+Maximum vertical stretch:  1.6590678206927278
+Iteration 82: lambda_uniaxial=1.6671190679919312, mu_bar=-0.11868950978958007
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=82
+Average energy density =  -46.42612
+Maximum vertical stretch:  1.6670815577802394
+Iteration 83: lambda_uniaxial=1.6751327151625643, mu_bar=-0.11677707207440453
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=83
+Average energy density =  -46.62847
+Maximum vertical stretch:  1.6750952945265971
+Iteration 84: lambda_uniaxial=1.683146362333198, mu_bar=-0.11490821702083247
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=84
+Average energy density =  -46.82826
+Maximum vertical stretch:  1.6831090309358991
+Iteration 85: lambda_uniaxial=1.691160009503831, mu_bar=-0.11308163462770568
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=85
+Average energy density =  -47.02554
+Maximum vertical stretch:  1.6911227670120357
+Iteration 86: lambda_uniaxial=1.6991736566744644, mu_bar=-0.11129606397366347
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=86
+Average energy density =  -47.22036
+Maximum vertical stretch:  1.6991365027587038
+Iteration 87: lambda_uniaxial=1.7071873038450978, mu_bar=-0.10955029100165024
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=87
+Average energy density =  -47.41275
+Maximum vertical stretch:  1.7071502381794066
+Iteration 88: lambda_uniaxial=1.715200951015731, mu_bar=-0.10784314642099291
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=88
+Average energy density =  -47.60276
+Maximum vertical stretch:  1.7151639732774675
+Iteration 89: lambda_uniaxial=1.7232145981863642, mu_bar=-0.10617350371985555
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=89
+Average energy density =  -47.79043
+Maximum vertical stretch:  1.7231777080560342
+Iteration 90: lambda_uniaxial=1.7312282453569976, mu_bar=-0.1045402772813748
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=90
+Average energy density =  -47.97581
+Maximum vertical stretch:  1.7311914425180823
+Iteration 91: lambda_uniaxial=1.739241892527631, mu_bar=-0.10294242059724022
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=91
+Average energy density =  -48.15893
+Maximum vertical stretch:  1.7392051766664252
+Iteration 92: lambda_uniaxial=1.7472555396982643, mu_bar=-0.10137892457291192
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=92
+Average energy density =  -48.33983
+Maximum vertical stretch:  1.7472189105037181
+Iteration 93: lambda_uniaxial=1.7552691868688974, mu_bar=-0.09984881591905888
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=93
+Average energy density =  -48.51855
+Maximum vertical stretch:  1.7552326440324613
+Iteration 94: lambda_uniaxial=1.7632828340395308, mu_bar=-0.0983511556241642
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=94
+Average energy density =  -48.69513
+Maximum vertical stretch:  1.76324637725501
+Iteration 95: lambda_uniaxial=1.7712964812101641, mu_bar=-0.09688503750358105
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=95
+Average energy density =  -48.86959
+Maximum vertical stretch:  1.7712601101735757
+Iteration 96: lambda_uniaxial=1.7793101283807975, mu_bar=-0.09544958682063312
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=96
+Average energy density =  -49.04199
+Maximum vertical stretch:  1.7792738427902315
+Iteration 97: lambda_uniaxial=1.7873237755514308, mu_bar=-0.09404395897564045
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=97
+Average energy density =  -49.21236
+Maximum vertical stretch:  1.7872875751069182
+Iteration 98: lambda_uniaxial=1.795337422722064, mu_bar=-0.09266733825902107
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=98
+Average energy density =  -49.38072
+Maximum vertical stretch:  1.7953013071254458
+Iteration 99: lambda_uniaxial=1.8033510698926973, mu_bar=-0.09131893666486234
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=99
+Average energy density =  -49.54711
+Maximum vertical stretch:  1.8033150388475
+Iteration 100: lambda_uniaxial=1.8113647170633307, mu_bar=-0.09
+filename=test202611171429/result_gelsMu2D_phi0=0.9_absMuBar=0.090_iter=100
+Average energy density =  -49.71131
+Maximum vertical stretch:  1.8113165420778903
+Time elapsed =1:10:12.595183
+ 
+Screen printout available also at: slurm-1097791.out
+###
+

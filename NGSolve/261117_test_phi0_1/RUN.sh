@@ -11,7 +11,7 @@
 
 # Default values
 CONTAINER="$HOME/gels/ngsolve_latest.sif"
-SIMULATION_NUMBER=10     # number of row to execute in the file to_execute.txt
+SIMULATION_NUMBER=11     # number of row to execute in the file to_execute.txt
 
 vars=$(awk "NR==$SIMULATION_NUMBER" to_execute.txt)
 echo "Parámetros: $vars"
