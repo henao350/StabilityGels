@@ -16,7 +16,7 @@ SIMULATION_NUMBER=9     # number of row to execute in the file to_execute.txt
 vars=$(awk "NR==$SIMULATION_NUMBER" to_execute.txt)
 echo "Parámetros: $vars"
 
-PRINTOUT_FILE="gelsMuPer$SIMULATION_NUMBER.out"
+PRINTOUT_FILE="gelsMu$SIMULATION_NUMBER.out"
 
 singularity exec \
 $CONTAINER \

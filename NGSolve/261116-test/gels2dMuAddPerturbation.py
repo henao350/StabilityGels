@@ -4,20 +4,55 @@ import numpy as np
 import datetime
 import os
 
-def compute_solution(solver, mu_bar, tol=1e-08, maxits=50, alpha=5e-2, Draw_solution = True, filename = 'gridfunctions/result_gelsMu2D'):
+def compute_solution(solver,
+                     mu_bar,
+                     tol=1e-08,
+                     maxits=50,
+                     alpha=5e-2,
+                     Draw_solution = True,
+                     filename = 'gridfunctions/result_gelsMu2D',
+                     Save_iterations = False):
     solver.gel.mu_bar.Set(mu_bar)
     solver.model()
-    solver.gfu, _,_ = SolveNonlinearMinProblem(a= solver.a, gfu = solver.gfu,\
-            FreeDofs =solver.fes.FreeDofs(), maxits=maxits, tol=tol)
-    solver.gfu.Save(filename +'.gfu')
+    # solver.gfu, _,_ = SolveNonlinearMinProblem(a= solver.a, gfu = solver.gfu, FreeDofs =solver.fes.FreeDofs(), maxits=maxits, tol=tol)
+    #
+    mesh = solver.mesh; gel = solver.gel
+    ###
+    a= solver.a
+    gfu = solver.gfu
+    FreeDofs =solver.fes.FreeDofs()
+    ###
+    if Save_iterations:
+        gfu.Save(filename + f'_Newton_00.gfu')
+    ###
+    res = gfu.vec.CreateVector()
+    du  = gfu.vec.CreateVector()
+    for it in range(1,maxits+1):
+        #
+        a.Apply (gfu.vec, res)
+        a.AssembleLinearization (gfu.vec)
+        #
+        inv = a.mat.Inverse(FreeDofs)
+        du.data = - alpha * inv * res
+        gfu.vec.data += du
+        #
+        if Save_iterations:
+            gfu.Save(filename + f'_Newton_{str(it).zfill(2)}.gfu')
+        #
+        if Draw_solution:
+            Draw((y+gfu[1])/d, mesh, deformation=gfu)
+        # stopping criteria
+        stopcritval = sqrt(abs(InnerProduct(du,res)))
+        if stopcritval < tol:
+            break
+    ###
+    # solver.gfu.Save(filename +'.gfu')
     # Now print status
-    gfu = solver.gfu; mesh = solver.mesh; gel = solver.gel
+    # gfu = solver.gfu; mesh = solver.mesh; gel = solver.gel
     F=Id(2)+Grad(gfu)
     print('Average energy density = ', round(Integrate(gel.W(F), mesh)/(L*d),5))   
     vertex_values = [(y+gfu[1])(mesh(*p)) for p in mesh.ngmesh.Points()]
     print(f'Maximum vertical stretch: ', max(vertex_values)/gel.d)
-    if Draw_solution:
-        Draw((y+gfu[1])/d, mesh, deformation=gfu)
 
 
 if __name__ == '__main__':
@@ -53,7 +88,14 @@ if __name__ == '__main__':
     #
     modelling = Solve_gel_bonded (gel, order=order)
     #
-    mesh_file = 'meshes/meshPeriodic.vol'
+    # mesh_file = 'meshes/meshPeriodic.vol'
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    mesh_file = os.path.join(base_dir, "meshes", "meshPeriodic.vol")
+    if os.path.exists(mesh_file):
+        print(f'File {mesh_file} does exist :-)')
+    else:
+        print(f'File {mesh_file} does not exist :-(')
+
     modelling.add_mesh(mesh_file)
     # Initialize solver
     solver = modelling
@@ -61,7 +103,7 @@ if __name__ == '__main__':
     solver.model()
     solver.gfu = GridFunction(solver.fes)
     # Línea de código con el cambio principal de esta versión AddPerturbation.py"
-    solver.gfu.Load(f'test202611170112/result_gelsMu2D' 
+    solver.gfu.Load(f'test202611170858/result_gelsMu2D' 
                     + solver.gel.filename_suffix 
                     + '_iter=100.gfu')
     # ---------------------------------------------------------
@@ -114,6 +156,7 @@ if __name__ == '__main__':
     # Newton's
 
     tol = 1e-3
+    # maxits = 100
     maxits = 100
     alpha = 5e-2
 
@@ -130,7 +173,8 @@ if __name__ == '__main__':
         maxits=maxits,
         alpha=alpha,
         Draw_solution=False,
-        filename=filename
+        filename=filename,
+        Save_iterations=True
     )
 
     print("Time elapsed =" + str(datetime.datetime.now() - start_time))

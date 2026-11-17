@@ -1,0 +1,28 @@
+Parámetros: 100 20 3 0.8 0.05
+Start time: 2026-11-17 14:49:03
+L=100.0 [mm], d=20.0 [mm], order=3, phi0=0.8, mu_bar=-0.05
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 1.9377873942337085
+gel.Gfun(lambda_target) = 0.1372134997833521
+filename_suffix=_phi0=0.8_absMuBar=0.050
+mesh_file=/mnt/beegfs/home/duvan.henao/gels/261116-test/meshes/meshPeriodic.vol
+sum(fes.FreeDofs()) = 29148
+---------------------------------------------
+Initial surface perturbation
+n_waves = 5
+wavelength = 20.0
+A = 0.2
+A/d = 0.01
+k = 0.3141592653589793
+k*d = 6.283185307179586
+---------------------------------------------
+Adding surface perturbation...
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/duvan.henao/gels/261116-test/gels2dMuAddPerturbation.py", line 159, in <module>
+    compute_solution(
+  File "/mnt/beegfs/home/duvan.henao/gels/261116-test/gels2dMuAddPerturbation.py", line 37, in compute_solution
+    Draw((y+gfu[1])/d, mesh, deformation=gfu)
+                       ^^^^
+UnboundLocalError: cannot access local variable 'mesh' where it is not associated with a value
+Screen printout available also at: slurm-1097824.out
+###
+
