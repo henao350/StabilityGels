@@ -1,0 +1,58 @@
+Parámetros: 100 20 3 1.0 0.09
+Start time: 2026-11-18 02:30:52
+L=100.0 [mm], d=20.0 [mm], order=3, phi0=1.0, mu_bar=-0.09
+Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 2.0108852090963287
+gel.Gfun(lambda_target) = 0.13721349978333194
+filename_suffix=_phi0=1.0_absMuBar=0.090
+mesh_file=/mnt/beegfs/home/duvan.henao/gels/261118-test2-dry/meshes/meshPeriodic.vol
+sum(fes.FreeDofs()) = 29148
+mu_bar_end = -0.09
+Iteration 0: lambda_uniaxial=1.001, mu_bar=-5.510527261590909
+filename=test202611180230/result_gelsMu2D_phi0=1.0_absMuBar=0.090_iter=00
+Average energy density =  nan
+Maximum vertical stretch:  nan
+Iteration 1: lambda_uniaxial=1.0110988520909632, mu_bar=-3.131616343459803
+filename=test202611180230/result_gelsMu2D_phi0=1.0_absMuBar=0.090_iter=01
+Average energy density =  nan
+Maximum vertical stretch:  nan
+Iteration 2: lambda_uniaxial=1.0211977041819265, mu_bar=-2.5119647652295347
+filename=test202611180230/result_gelsMu2D_phi0=1.0_absMuBar=0.090_iter=02
+Average energy density =  nan
+Maximum vertical stretch:  nan
+Iteration 3: lambda_uniaxial=1.0312965562728897, mu_bar=-2.1492349280792276
+filename=test202611180230/result_gelsMu2D_phi0=1.0_absMuBar=0.090_iter=03
+Average energy density =  nan
+Maximum vertical stretch:  nan
+Iteration 4: lambda_uniaxial=1.041395408363853, mu_bar=-1.89596027397454
+filename=test202611180230/result_gelsMu2D_phi0=1.0_absMuBar=0.090_iter=04
+Average energy density =  nan
+Maximum vertical stretch:  nan
+Iteration 5: lambda_uniaxial=1.0514942604548163, mu_bar=-1.7035645016758427
+filename=test202611180230/result_gelsMu2D_phi0=1.0_absMuBar=0.090_iter=05
+Average energy density =  nan
+Maximum vertical stretch:  nan
+Iteration 6: lambda_uniaxial=1.0615931125457796, mu_bar=-1.5499216194212209
+filename=test202611180230/result_gelsMu2D_phi0=1.0_absMuBar=0.090_iter=06
+Average energy density =  nan
+Maximum vertical stretch:  nan
+Iteration 7: lambda_uniaxial=1.0716919646367429, mu_bar=-1.423076238649724
+filename=test202611180230/result_gelsMu2D_phi0=1.0_absMuBar=0.090_iter=07
+Average energy density =  nan
+Maximum vertical stretch:  nan
+Iteration 8: lambda_uniaxial=1.0817908167277062, mu_bar=-1.315833224153594
+filename=test202611180230/result_gelsMu2D_phi0=1.0_absMuBar=0.090_iter=08
+Average energy density =  nan
+Maximum vertical stretch:  nan
+Iteration 9: lambda_uniaxial=1.0918896688186694, mu_bar=-1.2235260044956096
+filename=test202611180230/result_gelsMu2D_phi0=1.0_absMuBar=0.090_iter=09
+Average energy density =  nan
+Maximum vertical stretch:  nan
+Iteration 10: lambda_uniaxial=1.1019885209096327, mu_bar=-1.1429564365706795
+filename=test202611180230/result_gelsMu2D_phi0=1.0_absMuBar=0.090_iter=10
+Average energy density =  nan
+Maximum vertical stretch:  nan
+Time elapsed =0:19:14.657181
+ 
+Screen printout available also at: slurm-1098059.out
+###
+
