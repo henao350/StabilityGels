@@ -7,10 +7,25 @@ from ngsolve import *
 import numpy as np
 import scipy.optimize
 
-def SolveNonlinearMinProblem(a, gfu, FreeDofs, tol=1e-08, maxits=50, alpha=5e-2):#, scenes=None):
+def SolveNonlinearMinProblem(
+        a, 
+        gfu,
+        FreeDofs,
+        tol=1e-08,
+        maxits=50,
+        alpha=5e-2,        
+        Save_iterations = False,
+        filename_main = 'test2026'
+        ):#, scenes=None):
+    # Saves current gfu as Newton iteration 0
+    it = 0 
+    if Save_iterations:
+        filename = filename_main + '_Newton=' + str(it).zfill(2)
+        gfu.Save(filename + '.gfu')
+    #
     res = gfu.vec.CreateVector()
     du  = gfu.vec.CreateVector()
-    for it in range(maxits):
+    for it in range(1,maxits+1):
         # print ("Newton iteration {:3}".format(it),end=", ")
         # print ("mu_bar = {:16}".format(a.mu_bar.Get()),end=", ")
         # print ("energy = {:16}".format(a.Energy(gfu.vec)),end="\n")
@@ -21,6 +36,12 @@ def SolveNonlinearMinProblem(a, gfu, FreeDofs, tol=1e-08, maxits=50, alpha=5e-2)
         du.data = - alpha * inv * res
         #update iteration
         gfu.vec.data += du
+        #
+        if Save_iterations:
+        # if Save_iterations and (it % 50 == 0 or it == maxits):
+            print(f'it = {it}')
+            filename = filename_main + '_Newton=' + str(it).zfill(2)
+            gfu.Save(filename + '.gfu')
         #stopping criteria
         stopcritval = sqrt(abs(InnerProduct(du,res)))
         # print ("<A u",it,", A u",it,">_{-1}^0.5 = ", stopcritval)
@@ -28,6 +49,7 @@ def SolveNonlinearMinProblem(a, gfu, FreeDofs, tol=1e-08, maxits=50, alpha=5e-2)
             break
         #for sc in scenes:
         #    sc.Redraw()
+    print(f'Newton\'s method arrived to specified tolerance after {it} iterations')
     return gfu, stopcritval, it
 
 class gel2d:
@@ -55,8 +77,17 @@ class gel2d:
         #
         self.lambda_target = lambda_target
         mu_bar = self.mu_fun(lambda_target)
+        # mu_bar = round(mu_bar, 3)  # round to 3 decimal places
         print(f'Computed mu_bar = {mu_bar} for lambda_target = {lambda_target}')
         self.mu_bar = Parameter(mu_bar)
+        self.p_bar = self.p0_bar*exp(self.mu_bar)  # [Kang & Huang JMPS 2010, Eq. (2.3)]        
+        #
+        print(f'Entropic unit = {self.entropic_unit:.2f} [MPa], G = {self.G.Get():.4f} [MPa], ' \
+                + f'chi = {self.chi}, p0_bar = {self.p0_bar:.7f}, lambda_target = {self.lambda_target}')
+        print(f'gel.Gfun(lambda_target) = {self.Gfun(self.lambda_target)}')
+
+        self.filename_suffix = self.filename_suffix_()
+        print(f'filename_suffix={self.filename_suffix}')
 
     def phi(self, J):
         return self.phi0/J
@@ -70,12 +101,59 @@ class gel2d:
         # return self.phi(J) + np.log(1-self.phi(J)) + self.chi * self.phi(J)**2
         return phi + np.log(1-phi) + chi*phi**2
 
+    def dH_fes(self, J):
+        phi = self.phi(J)
+        chi = self.chi
+        # return self.phi(J) + np.log(1-self.phi(J)) + self.chi * self.phi(J)**2
+        return phi + log(1-phi) + chi*phi**2
+
     # Computes gamma (i.e. G/entropic_unit) from a desired target value lamb for lambda_uniaxial
     # and a given mu_bar and p_bar, using [Kang & Huang JMPS 2010, Eq.(3.6)]
     def Gfun(self, lamb):
         mu_bar = self.mu_bar.Get()
         p_bar = self.p0_bar*np.exp(mu_bar)
         return ((mu_bar - p_bar -self.dH(lamb))/(lamb-1/lamb))*self.entropic_unit
+
+    # def find_lambda_target(self):
+    #     G_value = self.G.Get()
+    #     def auxFunctionLambdaTargetShearModulus(lamb):
+    #         return self.Gfun(lamb) - G_value
+    #     # Among 100 trials, chooses the value of lambda
+    #     # for which Gfun is as the closest to the target G_value
+    #     lambda_start = 1.0001; lambda_end = 10; numPoints=1000;
+    #     lambda_values = np.linspace(lambda_start, lambda_end, numPoints)        
+    #     lambda_initial_fsolve = lambda_start
+    #     best_abs_dist= abs(auxFunctionLambdaTargetShearModulus(lambda_start))
+    #     for lamb in lambda_values:
+    #         dist = auxFunctionLambdaTargetShearModulus(lamb)
+    #         if abs(dist) < best_abs_dist:
+    #             best_abs_dist = abs(dist)
+    #             lambda_initial_fsolve = lamb   
+    #     # and finally, for higher precision, fsolve is called
+    #     # This seems to be necessary since the functin Gfun is
+    #     # extremely sensitive to changes in lambda even in its fourth decimal place
+    #     lambda_target = (scipy.optimize.fsolve(auxFunctionLambdaTargetShearModulus, lambda_initial_fsolve))[0]   # approximate solution to  self.G_fun(lamb) = G_value, for given G_value          
+    #     return lambda_target
+
+    # def find_lambda_for_mu(self):
+    #     mu_value = gel.mu_bar.Get()
+    #     def auxFunctionLambdaMu(lamb):
+    #         return gel.mu_fun(lamb) - mu_value
+    #     # Among 100 trials, chooses the value of lambda
+    #     # for which mu_fun is closest to the target mu_value
+    #     lambda_start = 1.0001; lambda_end = 10; numPoints=1000;
+    #     lambda_values = np.linspace(lambda_start, lambda_end, numPoints)        
+    #     lambda_initial_fsolve = lambda_start
+    #     best_abs_dist= abs(auxFunctionLambdaMu(lambda_start))
+    #     for lamb in lambda_values:
+    #         dist = auxFunctionLambdaMu(lamb)
+    #         if abs(dist) < best_abs_dist:
+    #             best_abs_dist = abs(dist)
+    #             lambda_initial_fsolve = lamb   
+    #     # and finally, for higher precision, fsolve is called
+    #     # This seems to be necessary since the function mu_fun is potentially 
+    #     # extremely sensitive to changes in lambda
+    #     lamb = (scipy.optimize.fsolve(auxFunctionLambdaMu, lambda_initial_fsolve))[0]   # approximate solution to  self.mu_fun(lamb) = mu_value, for given mu_value          
 
     #### Compute nondimensionalized chemical potencial mu_bar
     #### for given lambda, phi0, chi and gamma,
@@ -87,3 +165,101 @@ class gel2d:
         gamma = self.gamma
         return self.dH(lamb) + gamma*(lamb - 1/lamb) + p_bar   # [Kang & Huang JMPS 2010, Eq.(3.6), but with p replaced by p_0]    
 
+    # energy density in [MPa]
+    def W(self, F):      
+        J = Det(F)
+        C = F.trans* F
+        First_principal_invariant = 1.0 + Trace(C)
+        #
+        gel = self
+        G = gel.G
+        phi0 = gel.phi0
+        p_bar = gel.p_bar
+        p = p_bar * self.entropic_unit
+        mu_bar = gel.mu_bar.Get()
+        #
+        # nu=gel.entropic_unit       
+        # reference_energy_density =  self.reference_energy_density        
+        # return 0.5*G*(First_principal_invariant - 3 -2*log(J)) + nu*gel.H(J) - reference_energy_density
+        #
+        # [Kang & Huang JMPS 2010, Eqs. (2.6), (2.7), (2.9) and (3.5)]
+        elastic = 0.5*G*(First_principal_invariant - 3 -2*log(J))
+        Flory_Huggins = self.entropic_unit*gel.H(J)
+        # - mu * C = - mu * (J-phi0)/V_m = - (mu_bar*K_B*T)*(J-phi0)/V_m = - entropic_unit*mu_bar*(J-phi0)
+        chemical_potential = - self.entropic_unit * mu_bar * (J - phi0)
+        pressure_external_solvent = (J - phi0)*p
+        return elastic + Flory_Huggins + chemical_potential + pressure_external_solvent
+
+    # Horizontal stress
+    def sigma_xx(self, F):
+        J = Det(F)
+        #
+        gel = self
+        G = gel.G
+        p_bar = gel.p_bar
+        p = p_bar * self.entropic_unit
+        mu_bar = gel.mu_bar.Get()
+        #
+        elastic = (G/J)*(F[0,0]**2 + F[0,1]**2) - G/J
+        Flory_Huggins = self.entropic_unit*gel.dH_fes(J)
+        chemical_potential = - self.entropic_unit * mu_bar
+        pressure_external_solvent = p
+        return elastic + Flory_Huggins + chemical_potential + pressure_external_solvent
+
+    def filename_suffix_(self):
+        phi0=self.phi0; mu_bar=self.mu_bar.Get()
+        return f"_phi0={phi0}_absMuBar={abs(mu_bar):.3f}"
+
+    def filename_main(self, simulation_name):
+        return f'{simulation_name}/result_gelsMu2D' + self.filename_suffix
+    
+    # def filename_Newton_it(self, simulation_name, it):
+    #     return self.filename_main(simulation_name) + '_Newton=' + str(it).zfill(2)
+
+class Solve_gel_bonded:
+    def __init__(self, gel, order=3):           # corner_refinement capability not yet activated
+        self.gel = gel
+        self.order = order
+
+    def update_chemical_potential(self, new_mu_bar):
+        solver=self
+        solver.gel.mu_bar.Set(new_mu_bar)
+        solver.model()
+        solver.gel.filename_suffix = solver.gel.filename_suffix_()
+        print(f'mu_bar is now {solver.gel.mu_bar.Get()} and filename_suffix={solver.gel.filename_suffix}')    
+
+    def add_mesh(self, mesh_file):
+        print(f'mesh_file={mesh_file}')
+        self.mesh = Mesh(mesh_file)
+        print(f'nElements = {self.mesh.ne}, nVertices = {self.mesh.nv}')
+
+    def Space(self):
+        # # Finite element space with zero-displacement boundary condition on the whole interface
+        # # and periodic boundary conditions identifying left and right.
+        # self.fes = VectorH1(self.mesh, order=self.order, \
+        #                     dirichlet="bot", dirichletx="left|right")
+        # print(f'sum(fes.FreeDofs()) = {sum(self.fes.FreeDofs())}')
+        ###
+        # Finite element space with zero-displacement boundary condition on the whole interface
+        # and periodic boundary conditions identifying left and right.
+        self.fes = Periodic(VectorH1(self.mesh, order=self.order, \
+                            dirichlet="bot"))
+        print(f'sum(fes.FreeDofs()) = {sum(self.fes.FreeDofs())}')
+        ###
+        # # Finite element space with zero-displacement boundary condition on the whole interface
+        # self.fes = VectorH1(self.mesh, order=self.order, \
+        #                     dirichlet="bonded_interface|debonded_interface")
+        # print('nDoF = {}'.format(self.fes.ndof))
+
+    def model(self):
+        u = self.fes.TrialFunction()
+        I = Id(self.mesh.dim)
+        F = I + Grad(u)
+        def negpart(var):
+            #return max(-var,0)
+            return (sqrt(var**2)-var)*0.5        
+        # hydrogel model        
+        AA = 1e5
+        self.a = BilinearForm(self.fes, symmetric=False)
+        self.a += Variation(  self.gel.W(F).Compile() * dx)
+        self.a += Variation(  AA*negpart(y+u[1])**2 * dx)

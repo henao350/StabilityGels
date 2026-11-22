@@ -10,6 +10,24 @@ Pendiente:
 
 ### VAMOS AQUÍ 
 
+[21/nov/26]
+Cambios en 261122-test4-phi0_0_9
+- Tenías razón de que en la configuración de referencia la razón de aspecto debe ser de 1 a 10 (el cálculo que hicimos al ojo de 1 a 5 era en la Fig. 8.a, donde ya se suponse que se estiró verticalmente con lambda_h=2)
+- Cambié las dimensiones, L=10, d=1 en vez de L=100  (para facilitar la comparación con la Fig. 9 en [Kwang&Huang,JMPS2010]; en nuestros geles sintetizados por Sichen Song, es como si estuvieramos usando [cm] como unidad de medida)
+- Se entrega como argumento en la línea de comandos lambda_target en vez de AbsMuBar.
+- Ahora hay una nueva librería ClassGels3 (ya no se llama ClassGel2d)
+- La clase gel2d ahora incluye una función filename_main que define el formato para el nombre de los archivos de salida con los .gfu
+- Ahora el initial guess para Newton es el homogeneous swelling with stretch lambda_target
+- 100 Newton iterations (from that initial guess) are run to find the "flat" equilibirum solution. This is done with the function compute_first_solution
+- Colours in load_results.ipynb > Draw  are now for the horizontal compressive stress sigma_{11} of the Cauchy stress (as in Fig. 8 of Kwang & Huang JMPS 2010)
+- The class gel2d now includes a function that computes the horizontal compressive stress (sigma_{11} component of the Cauchy stress) tensor
+- The function SolveNonlinearMinProblem, in the module ClassGels3.py, now receives a "Save_iterations" flag, and (if Save_iterations is True) a "filename_main". The last one is used to build the filename to save the gridfunction .gfu on disk. The filename_main is meant to be obtained from the new method filename_main inside class gel2d
+- The function compute_solution was removed, in the main script. 
+- In the Newton's iterations in SolveNonlinearMinProblem, the index for the iteration now goes from 1 to maxits, not from 0 to maxits-1. (Now index 0 is for the initial guess, and as such it is saved in disk.)
+- In class Solve_gel_bonded, in the module ClassGels3.py, added the method update_chemical_potential, which also updates gel.filename_suffix
+- In method __init__ in class gel2d, now filename_suffix is generated with the new method filename_suffix_ in the same class gel2d. 
+- Now using python's logging package
+
 [12/ago/26] rsync -avP Pedro:~/260812-Cluster-gelsMu2D ..
 
 [2/abr/26] Corregimos la definición de la función gel_3D.mu_fun
