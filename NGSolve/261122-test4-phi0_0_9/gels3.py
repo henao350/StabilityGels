@@ -141,7 +141,10 @@ if __name__ == '__main__':
     # amp_rel = 0.01
     # amp_rel=2e-2
     # amp_rel=3e-2
-    amp_rel = 10e-2
+    # amp_rel = 10e-2
+    # amp_rel = 50e-2
+    # amp_rel = 100e-2
+    amp_rel = 200e-2
     A = amp_rel * d
     k = 2*np.pi*n_waves/L
     #

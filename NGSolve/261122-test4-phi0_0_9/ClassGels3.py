@@ -26,9 +26,9 @@ def SolveNonlinearMinProblem(
     res = gfu.vec.CreateVector()
     du  = gfu.vec.CreateVector()
     for it in range(1,maxits+1):
-        # print ("Newton iteration {:3}".format(it),end=", ")
+        print ("Newton iteration {:3}".format(it),end=", ")
         # print ("mu_bar = {:16}".format(a.mu_bar.Get()),end=", ")
-        # print ("energy = {:16}".format(a.Energy(gfu.vec)),end="\n")
+        print ("energy = {:16}".format(a.Energy(gfu.vec)),end="\n")
         # solve linearized problem:
         a.Apply (gfu.vec, res)
         a.AssembleLinearization (gfu.vec)
@@ -39,7 +39,7 @@ def SolveNonlinearMinProblem(
         #
         if Save_iterations:
         # if Save_iterations and (it % 50 == 0 or it == maxits):
-            print(f'it = {it}')
+            # print(f'it = {it}')
             filename = filename_main + '_Newton=' + str(it).zfill(2)
             gfu.Save(filename + '.gfu')
         #stopping criteria
