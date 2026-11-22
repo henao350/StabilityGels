@@ -1,0 +1,7 @@
+[22/Nov/2026/13:30]
+result_gelsMu2D_phi0=1.0_absMuBar=0.092.gfu
+which corresponds fo Fig. 8.(a) in [KangHuangJMPS2010]   (lambda_h=2.0)
+was computed in 261122-test6-dry/test202611221321
+with parameters:
+n_waves=5, amp_rel=1%, maxh_coarse=d*(4e-2), maxh_fine=d*(4e-2), tol=1e-3; maxits=100;
+(Specified tolerance was actually achieved after 63 iterations; nDof=126756)

@@ -27,6 +27,7 @@ Cambios en 261122-test4-phi0_0_9
 - In class Solve_gel_bonded, in the module ClassGels3.py, added the method update_chemical_potential, which also updates gel.filename_suffix
 - In method __init__ in class gel2d, now filename_suffix is generated with the new method filename_suffix_ in the same class gel2d. 
 - Now using python's logging package
+- pushCluster and pullCluster now automatically detect the name of the local folder (before that need to be changed by hand in each new version)
 
 [12/ago/26] rsync -avP Pedro:~/260812-Cluster-gelsMu2D ..
 

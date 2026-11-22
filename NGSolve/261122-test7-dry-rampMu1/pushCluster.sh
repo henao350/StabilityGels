@@ -1,0 +1,5 @@
+#!/bin/bash
+CURRENT_DIR="${PWD##*/}"
+ORIGIN="../$CURRENT_DIR"
+DESTINATION="phernandez@172.16.105.104:~/"
+rsync -avP $ORIGIN $DESTINATION

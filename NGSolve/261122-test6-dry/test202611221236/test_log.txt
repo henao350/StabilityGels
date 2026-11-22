@@ -1,0 +1,31 @@
+2026-11-22 12:36:24,656 - INFO - Starting new convergence test run at 202611221236
+2026-11-22 12:36:24,656 - INFO - Results will be stored in: /home/henao1/Dropbox/Zubiri/trabajo/00_research/Pedro/251030-github/StabilityGels/NGSolve/261122-test6-dry/test202611221236
+2026-11-22 12:36:24,656 - INFO - --------------------------------------------------
+2026-11-22 12:36:24,656 - INFO - Start time: 2026-11-22 12:36:24
+2026-11-22 12:36:24,656 - INFO - L=10.0 [cm], d=1.0 [cm], order=3, phi0=0.9, lambda_target=2.0
+2026-11-22 12:36:24,656 - INFO - File meshes/meshPeriodic.vol does exist :-)
+2026-11-22 12:36:25,560 - INFO - Maximum swollen gel thickness: 2.00000070658951
+2026-11-22 12:36:25,560 - INFO - Newton's method arrived to specified tolerance after 1 iterations
+2026-11-22 12:36:25,640 - INFO - ---------------------------------------------
+2026-11-22 12:36:25,640 - INFO - Initial surface perturbation
+2026-11-22 12:36:25,640 - INFO - n_waves = 5
+2026-11-22 12:36:25,640 - INFO - wavelength = 2.0
+2026-11-22 12:36:25,640 - INFO - A = 1.0
+2026-11-22 12:36:25,640 - INFO - A/d = 1.0
+2026-11-22 12:36:25,640 - INFO - k = 3.141592653589793
+2026-11-22 12:36:25,640 - INFO - k*d = 3.141592653589793
+2026-11-22 12:36:25,640 - INFO - ---------------------------------------------
+2026-11-22 12:36:25,648 - INFO - Newton iteration   0
+2026-11-22 12:36:25,667 - INFO - a.Energy = -466.77182236519656
+2026-11-22 12:36:26,346 - INFO - Maximum swollen gel thickness: 2.9634386025469217
+2026-11-22 12:36:27,454 - INFO - Maximum swollen gel thickness: nan
+2026-11-22 12:36:29,716 - INFO - Maximum swollen gel thickness: nan
+2026-11-22 12:36:31,973 - INFO - Maximum swollen gel thickness: nan
+2026-11-22 12:36:34,282 - INFO - Maximum swollen gel thickness: nan
+2026-11-22 12:36:36,560 - INFO - Maximum swollen gel thickness: nan
+2026-11-22 12:36:38,825 - INFO - Maximum swollen gel thickness: nan
+2026-11-22 12:36:41,130 - INFO - Maximum swollen gel thickness: nan
+2026-11-22 12:36:43,426 - INFO - Maximum swollen gel thickness: nan
+2026-11-22 12:36:45,744 - INFO - Maximum swollen gel thickness: nan
+2026-11-22 12:36:48,051 - INFO - Maximum swollen gel thickness: nan
+2026-11-22 12:36:50,406 - INFO - Maximum swollen gel thickness: nan

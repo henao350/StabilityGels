@@ -1,0 +1,5 @@
+Parámetros: 10.0 1.0 3 1.0 2.6
+FATAL:   While checking container encryption: could not open image /mnt/beegfs/home/phernandez/gels/ngsolve_latest.sif: failed to retrieve path for /mnt/beegfs/home/phernandez/gels/ngsolve_latest.sif: lstat /mnt/beegfs/home/phernandez/gels: no such file or directory
+Screen printout available also at: slurm-1104876.out
+###
+

@@ -1,0 +1,5 @@
+Parámetros: 10.0 1.0 3 1.0 2.6
+/usr/bin/python3: can't open file '/mnt/beegfs/home/phernandez/261122-test7-dry-rampMu1/gels2dMu.py': [Errno 2] No such file or directory
+Screen printout available also at: slurm-1104877.out
+###
+

@@ -1,0 +1,21 @@
+2026-11-22 12:37:13,920 - INFO - Starting new convergence test run at 202611221237
+2026-11-22 12:37:13,920 - INFO - Results will be stored in: /home/henao1/Dropbox/Zubiri/trabajo/00_research/Pedro/251030-github/StabilityGels/NGSolve/261122-test6-dry/test202611221237
+2026-11-22 12:37:13,920 - INFO - --------------------------------------------------
+2026-11-22 12:37:13,920 - INFO - Start time: 2026-11-22 12:37:13
+2026-11-22 12:37:13,920 - INFO - L=10.0 [cm], d=1.0 [cm], order=3, phi0=0.9, lambda_target=2.0
+2026-11-22 12:37:13,920 - INFO - File meshes/meshPeriodic.vol does exist :-)
+2026-11-22 12:37:17,985 - INFO - Maximum swollen gel thickness: 2.0000007065895096
+2026-11-22 12:37:17,985 - INFO - Newton's method arrived to specified tolerance after 1 iterations
+2026-11-22 12:37:18,331 - INFO - ---------------------------------------------
+2026-11-22 12:37:18,331 - INFO - Initial surface perturbation
+2026-11-22 12:37:18,331 - INFO - n_waves = 5
+2026-11-22 12:37:18,331 - INFO - wavelength = 2.0
+2026-11-22 12:37:18,331 - INFO - A = 1.0
+2026-11-22 12:37:18,331 - INFO - A/d = 1.0
+2026-11-22 12:37:18,331 - INFO - k = 3.141592653589793
+2026-11-22 12:37:18,331 - INFO - k*d = 3.141592653589793
+2026-11-22 12:37:18,331 - INFO - ---------------------------------------------
+2026-11-22 12:37:18,364 - INFO - Newton iteration   0
+2026-11-22 12:37:18,431 - INFO - a.Energy = -466.77183376969947
+2026-11-22 12:37:21,843 - INFO - Maximum swollen gel thickness: 2.96147167124775
+2026-11-22 12:37:31,744 - INFO - Maximum swollen gel thickness: nan
