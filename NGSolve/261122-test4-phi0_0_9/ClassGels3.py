@@ -49,7 +49,10 @@ def SolveNonlinearMinProblem(
             break
         #for sc in scenes:
         #    sc.Redraw()
-    print(f'Newton\'s method arrived to specified tolerance after {it} iterations')
+    if stopcritval < tol:
+        print(f'Newton\'s method arrived to specified tolerance after {it} iterations')
+    else:
+        print(f'Newthon\'s method did not arrive to the specified tolerance during the {maxits} iterations')
     return gfu, stopcritval, it
 
 class gel2d:

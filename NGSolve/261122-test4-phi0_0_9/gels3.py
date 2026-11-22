@@ -4,6 +4,7 @@ from ngsolve import *
 import numpy as np
 import datetime
 import os
+import logging
 
 # def compute_solution(solver,
 #                      mu_bar,
@@ -32,6 +33,10 @@ import os
 
 
 if __name__ == '__main__':
+ 
+    # ---------------------------------------------------------
+    # SETUP FOR FOLDER AND LOGGING
+    # ---------------------------------------------------------
     start_time = datetime.datetime.now()
     #
     timestamp = start_time.strftime("%Y%m%d%H%M")
@@ -39,7 +44,26 @@ if __name__ == '__main__':
     # if folder {simulation_name} does not exist, create it
     if not os.path.exists(simulation_name):
         os.makedirs(simulation_name)
-    #### READ PARAMETERS ####
+    # Set up logging to a file within the test directory and also to console
+    log_file_path = os.path.join(simulation_name, "test_log.txt")
+    # Configure logging: clear existing handlers to avoid duplicate output
+    for handler in logging.root.handlers[:]:
+        logging.root.removeHandler(handler)
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s - %(levelname)s - %(message)s',
+        handlers=[
+            logging.FileHandler(log_file_path),
+            logging.StreamHandler() # Also print to console
+            ]
+        )
+    # Get the logger instance
+    logger = logging.getLogger()
+    logger.info(f"Starting new convergence test run at {timestamp}")
+    logger.info(f"Results will be stored in: {os.path.abspath(simulation_name)}")
+    logger.info("-" * 50)
+    # ---------------------------------------------------------
+    # READ PARAMETERS
     # It will be assumed that the arguments passed from shell
     # are, in that order:
     # the length; the thickness; the order for the finite element space;
@@ -48,14 +72,15 @@ if __name__ == '__main__':
     # For example,
     #    100 20 3 0.9 2.0
     # means L=100, d=20, order=3, phi0=0.9, lambda_h=2.0
+    # ---------------------------------------------------------
     data = sys.argv
     L = float(data[1])
     d = float(data[2])
     order = int(data[3])
     phi0 = float(data[4])
     lambda_target = float(data[5])
-    print(f'Start time: {start_time.strftime("%Y-%m-%d %H:%M:%S")}')
-    print(f'L={L} [cm], d={d} [cm], order={order}, phi0={phi0}, lambda_target={lambda_target}')
+    logger.info(f'Start time: {start_time.strftime("%Y-%m-%d %H:%M:%S")}')
+    logger.info(f'L={L} [cm], d={d} [cm], order={order}, phi0={phi0}, lambda_target={lambda_target}')
     #
     gel = gel2d(L,d,phi0,lambda_target)
     #
@@ -65,9 +90,9 @@ if __name__ == '__main__':
     # mesh_file = os.path.join(base_dir, "meshes", "meshPeriodic.vol")
     mesh_file = os.path.join("meshes", "meshPeriodic.vol")
     if os.path.exists(mesh_file):
-        print(f'File {mesh_file} does exist :-)')
+        logger.info(f'File {mesh_file} does exist :-)')
     else:
-        print(f'File {mesh_file} does not exist :-(')
+        logger.info(f'File {mesh_file} does not exist :-(')
     solver.add_mesh(mesh_file)
     ###
     # Initialize solver
@@ -113,7 +138,10 @@ if __name__ == '__main__':
     # u_2 = A*(y/d)*cos(k*x)
     # with A = amp_rel*d and k = 2*pi*n_waves/L.
     n_waves = 5
-    amp_rel = 0.01
+    # amp_rel = 0.01
+    # amp_rel=2e-2
+    # amp_rel=3e-2
+    amp_rel = 10e-2
     A = amp_rel * d
     k = 2*np.pi*n_waves/L
     #
@@ -124,15 +152,15 @@ if __name__ == '__main__':
             A*(y/d)*cos(k*x)
         )
     ) 
-    print('---------------------------------------------')
-    print('Initial surface perturbation')
-    print(f'n_waves = {n_waves}')
-    print(f'wavelength = {L/n_waves}')
-    print(f'A = {A}')
-    print(f'A/d = {amp_rel}')
-    print(f'k = {k}')
-    print(f'k*d = {k*d}')
-    print('---------------------------------------------')
+    logger.info('---------------------------------------------')
+    logger.info('Initial surface perturbation')
+    logger.info(f'n_waves = {n_waves}')
+    logger.info(f'wavelength = {L/n_waves}')
+    logger.info(f'A = {A}')
+    logger.info(f'A/d = {amp_rel}')
+    logger.info(f'k = {k}')
+    logger.info(f'k*d = {k*d}')
+    logger.info('---------------------------------------------')
     #
     solver.gfu.vec.data += perturbation.vec
     #

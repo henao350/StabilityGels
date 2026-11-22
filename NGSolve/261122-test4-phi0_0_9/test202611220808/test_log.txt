@@ -1,0 +1,15 @@
+2026-11-22 08:08:25,564 - INFO - Starting new convergence test run at 202611220808
+2026-11-22 08:08:25,564 - INFO - Results will be stored in: /home/henao1/Dropbox/Zubiri/trabajo/00_research/Pedro/251030-github/StabilityGels/NGSolve/261122-test4-phi0_0_9/test202611220808
+2026-11-22 08:08:25,564 - INFO - --------------------------------------------------
+2026-11-22 08:08:25,564 - INFO - Start time: 2026-11-22 08:08:25
+2026-11-22 08:08:25,564 - INFO - L=10.0 [cm], d=1.0 [cm], order=3, phi0=0.9, lambda_target=7.0
+2026-11-22 08:08:25,565 - INFO - File meshes/meshPeriodic.vol does exist :-)
+2026-11-22 08:08:26,066 - INFO - ---------------------------------------------
+2026-11-22 08:08:26,066 - INFO - Initial surface perturbation
+2026-11-22 08:08:26,066 - INFO - n_waves = 5
+2026-11-22 08:08:26,066 - INFO - wavelength = 2.0
+2026-11-22 08:08:26,066 - INFO - A = 0.1
+2026-11-22 08:08:26,066 - INFO - A/d = 0.1
+2026-11-22 08:08:26,066 - INFO - k = 3.141592653589793
+2026-11-22 08:08:26,066 - INFO - k*d = 3.141592653589793
+2026-11-22 08:08:26,066 - INFO - ---------------------------------------------
