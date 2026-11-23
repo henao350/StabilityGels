@@ -1,0 +1,221 @@
+Parámetros: 10.0 1.0 3 1.0 2.01
+2026-11-23 03:29:10,275 - Starting new convergence test run at 202611230329
+2026-11-23 03:29:10,276 - Results will be stored in the folder: test202611230329
+2026-11-23 03:29:10,277 - --------------------------------------------------
+2026-11-23 03:29:10,277 - Start time: 2026-11-23 03:29:10
+2026-11-23 03:29:10,278 - L=10.0 [cm], d=1.0 [cm], order=3, phi0=1.0, lambda_target=2.01
+2026-11-23 03:29:10,280 - Computed mu_bar = -0.09012869421358526 for lambda_target = 2.01
+2026-11-23 03:29:10,284 - Entropic unit = 137.21 [MPa], G = 0.1372 [MPa], chi = 0.4, p0_bar = 0.0000233, lambda_target = 2.01
+2026-11-23 03:29:10,285 - gel.Gfun(lambda_target) = 0.13739584611549754
+2026-11-23 03:29:10,285 - filename_suffix=_phi0=1.0_absMuBar=0.090
+2026-11-23 03:29:10,286 - File meshes/meshPeriodic.vol does exist :-)
+2026-11-23 03:29:10,287 - mesh_file=meshes/meshPeriodic.vol
+2026-11-23 03:29:10,364 - nElements = 14084, nVertices = 7318
+2026-11-23 03:29:10,482 - sum(fes.FreeDofs()) = 126756
+2026-11-23 03:29:10,524 - Newton iteration   0
+2026-11-23 03:29:10,571 - a.Energy = -551.8594329206159
+2026-11-23 03:29:12,591 - Newton iteration   1
+2026-11-23 03:29:12,666 - a.Energy = -551.8604226778194
+2026-11-23 03:29:12,667 - <A u1, A u1>_-1^0.5 ?=? <du, res>_2^0.5 = 0.031861055762519984
+2026-11-23 03:29:13,131 - Maximum swollen gel thickness: 2.000978253261147
+2026-11-23 03:29:14,916 - Newton iteration   2
+2026-11-23 03:29:14,994 - a.Energy = -551.8613170374874
+2026-11-23 03:29:14,995 - <A u2, A u2>_-1^0.5 ?=? <du, res>_2^0.5 = 0.030286736547545618
+2026-11-23 03:29:15,455 - Maximum swollen gel thickness: 2.0015144773619205
+2026-11-23 03:29:17,212 - Newton iteration   3
+2026-11-23 03:29:17,287 - a.Energy = -551.862124896974
+2026-11-23 03:29:17,288 - <A u3, A u3>_-1^0.5 ?=? <du, res>_2^0.5 = 0.02878746679103467
+2026-11-23 03:29:17,746 - Maximum swollen gel thickness: 2.002280458805797
+2026-11-23 03:29:19,511 - Newton iteration   4
+2026-11-23 03:29:19,588 - a.Energy = -551.8628565263098
+2026-11-23 03:29:19,589 - <A u4, A u4>_-1^0.5 ?=? <du, res>_2^0.5 = 0.02739440488292497
+2026-11-23 03:29:20,053 - Maximum swollen gel thickness: 2.0028951188293194
+2026-11-23 03:29:21,805 - Newton iteration   5
+2026-11-23 03:29:21,880 - a.Energy = -551.8635153271706
+2026-11-23 03:29:21,881 - <A u5, A u5>_-1^0.5 ?=? <du, res>_2^0.5 = 0.025996824506317327
+2026-11-23 03:29:22,350 - Maximum swollen gel thickness: 2.0045732736121575
+2026-11-23 03:29:24,087 - Newton iteration   6
+2026-11-23 03:29:24,163 - a.Energy = -551.8368415444453
+2026-11-23 03:29:24,163 - <A u6, A u6>_-1^0.5 ?=? <du, res>_2^0.5 = 0.025075213583619315
+2026-11-23 03:29:24,636 - Maximum swollen gel thickness: 2.045321357177845
+2026-11-23 03:29:26,370 - Newton iteration   7
+2026-11-23 03:29:26,447 - a.Energy = -551.786594480984
+2026-11-23 03:29:26,448 - <A u7, A u7>_-1^0.5 ?=? <du, res>_2^0.5 = 0.06037875379970806
+2026-11-23 03:29:26,915 - Maximum swollen gel thickness: 2.0504568303100097
+2026-11-23 03:29:28,683 - Newton iteration   8
+2026-11-23 03:29:28,761 - a.Energy =              nan
+2026-11-23 03:29:28,762 - <A u8, A u8>_-1^0.5 ?=? <du, res>_2^0.5 = 0.10218171972610054
+2026-11-23 03:29:29,222 - Maximum swollen gel thickness: 2.196268540470589
+2026-11-23 03:29:32,933 - Newton iteration   9
+2026-11-23 03:29:33,008 - a.Energy =              nan
+2026-11-23 03:29:33,009 - <A u9, A u9>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:29:33,476 - Maximum swollen gel thickness: nan
+2026-11-23 03:29:39,841 - Newton iteration  10
+2026-11-23 03:29:39,919 - a.Energy =              nan
+2026-11-23 03:29:39,920 - <A u10, A u10>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:29:40,375 - Maximum swollen gel thickness: nan
+2026-11-23 03:29:46,899 - Newton iteration  11
+2026-11-23 03:29:46,976 - a.Energy =              nan
+2026-11-23 03:29:46,977 - <A u11, A u11>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:29:47,439 - Maximum swollen gel thickness: nan
+2026-11-23 03:29:53,826 - Newton iteration  12
+2026-11-23 03:29:53,903 - a.Energy =              nan
+2026-11-23 03:29:53,904 - <A u12, A u12>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:29:54,363 - Maximum swollen gel thickness: nan
+2026-11-23 03:30:00,888 - Newton iteration  13
+2026-11-23 03:30:00,963 - a.Energy =              nan
+2026-11-23 03:30:00,964 - <A u13, A u13>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:30:01,434 - Maximum swollen gel thickness: nan
+2026-11-23 03:30:07,825 - Newton iteration  14
+2026-11-23 03:30:07,903 - a.Energy =              nan
+2026-11-23 03:30:07,903 - <A u14, A u14>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:30:08,363 - Maximum swollen gel thickness: nan
+2026-11-23 03:30:14,721 - Newton iteration  15
+2026-11-23 03:30:14,797 - a.Energy =              nan
+2026-11-23 03:30:14,798 - <A u15, A u15>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:30:15,267 - Maximum swollen gel thickness: nan
+2026-11-23 03:30:21,639 - Newton iteration  16
+2026-11-23 03:30:21,716 - a.Energy =              nan
+2026-11-23 03:30:21,717 - <A u16, A u16>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:30:22,185 - Maximum swollen gel thickness: nan
+2026-11-23 03:30:28,523 - Newton iteration  17
+2026-11-23 03:30:28,600 - a.Energy =              nan
+2026-11-23 03:30:28,601 - <A u17, A u17>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:30:29,060 - Maximum swollen gel thickness: nan
+2026-11-23 03:30:35,435 - Newton iteration  18
+2026-11-23 03:30:35,511 - a.Energy =              nan
+2026-11-23 03:30:35,512 - <A u18, A u18>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:30:35,982 - Maximum swollen gel thickness: nan
+2026-11-23 03:30:42,347 - Newton iteration  19
+2026-11-23 03:30:42,422 - a.Energy =              nan
+2026-11-23 03:30:42,423 - <A u19, A u19>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:30:42,894 - Maximum swollen gel thickness: nan
+2026-11-23 03:30:49,244 - Newton iteration  20
+2026-11-23 03:30:49,320 - a.Energy =              nan
+2026-11-23 03:30:49,321 - <A u20, A u20>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:30:49,793 - Maximum swollen gel thickness: nan
+2026-11-23 03:30:56,220 - Newton iteration  21
+2026-11-23 03:30:56,296 - a.Energy =              nan
+2026-11-23 03:30:56,297 - <A u21, A u21>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:30:56,769 - Maximum swollen gel thickness: nan
+2026-11-23 03:31:03,110 - Newton iteration  22
+2026-11-23 03:31:03,186 - a.Energy =              nan
+2026-11-23 03:31:03,187 - <A u22, A u22>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:31:03,660 - Maximum swollen gel thickness: nan
+2026-11-23 03:31:10,120 - Newton iteration  23
+2026-11-23 03:31:10,197 - a.Energy =              nan
+2026-11-23 03:31:10,198 - <A u23, A u23>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:31:10,668 - Maximum swollen gel thickness: nan
+2026-11-23 03:31:17,033 - Newton iteration  24
+2026-11-23 03:31:17,111 - a.Energy =              nan
+2026-11-23 03:31:17,112 - <A u24, A u24>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:31:17,575 - Maximum swollen gel thickness: nan
+2026-11-23 03:31:23,913 - Newton iteration  25
+2026-11-23 03:31:23,989 - a.Energy =              nan
+2026-11-23 03:31:23,989 - <A u25, A u25>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:31:24,459 - Maximum swollen gel thickness: nan
+2026-11-23 03:31:30,780 - Newton iteration  26
+2026-11-23 03:31:30,856 - a.Energy =              nan
+2026-11-23 03:31:30,857 - <A u26, A u26>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:31:31,329 - Maximum swollen gel thickness: nan
+2026-11-23 03:31:37,754 - Newton iteration  27
+2026-11-23 03:31:37,829 - a.Energy =              nan
+2026-11-23 03:31:37,830 - <A u27, A u27>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:31:38,303 - Maximum swollen gel thickness: nan
+2026-11-23 03:31:44,672 - Newton iteration  28
+2026-11-23 03:31:44,748 - a.Energy =              nan
+2026-11-23 03:31:44,749 - <A u28, A u28>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:31:45,217 - Maximum swollen gel thickness: nan
+2026-11-23 03:31:51,638 - Newton iteration  29
+2026-11-23 03:31:51,716 - a.Energy =              nan
+2026-11-23 03:31:51,717 - <A u29, A u29>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:31:52,179 - Maximum swollen gel thickness: nan
+2026-11-23 03:31:58,521 - Newton iteration  30
+2026-11-23 03:31:58,596 - a.Energy =              nan
+2026-11-23 03:31:58,597 - <A u30, A u30>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:31:59,071 - Maximum swollen gel thickness: nan
+2026-11-23 03:32:05,384 - Newton iteration  31
+2026-11-23 03:32:05,460 - a.Energy =              nan
+2026-11-23 03:32:05,460 - <A u31, A u31>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:32:05,934 - Maximum swollen gel thickness: nan
+2026-11-23 03:32:12,300 - Newton iteration  32
+2026-11-23 03:32:12,376 - a.Energy =              nan
+2026-11-23 03:32:12,377 - <A u32, A u32>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:32:12,848 - Maximum swollen gel thickness: nan
+2026-11-23 03:32:19,202 - Newton iteration  33
+2026-11-23 03:32:19,277 - a.Energy =              nan
+2026-11-23 03:32:19,278 - <A u33, A u33>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:32:19,750 - Maximum swollen gel thickness: nan
+2026-11-23 03:32:26,083 - Newton iteration  34
+2026-11-23 03:32:26,158 - a.Energy =              nan
+2026-11-23 03:32:26,159 - <A u34, A u34>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:32:26,634 - Maximum swollen gel thickness: nan
+2026-11-23 03:32:33,002 - Newton iteration  35
+2026-11-23 03:32:33,078 - a.Energy =              nan
+2026-11-23 03:32:33,079 - <A u35, A u35>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:32:33,552 - Maximum swollen gel thickness: nan
+2026-11-23 03:32:39,863 - Newton iteration  36
+2026-11-23 03:32:39,938 - a.Energy =              nan
+2026-11-23 03:32:39,939 - <A u36, A u36>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:32:40,412 - Maximum swollen gel thickness: nan
+2026-11-23 03:32:46,730 - Newton iteration  37
+2026-11-23 03:32:46,806 - a.Energy =              nan
+2026-11-23 03:32:46,807 - <A u37, A u37>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:32:47,281 - Maximum swollen gel thickness: nan
+2026-11-23 03:32:53,613 - Newton iteration  38
+2026-11-23 03:32:53,688 - a.Energy =              nan
+2026-11-23 03:32:53,689 - <A u38, A u38>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:32:54,160 - Maximum swollen gel thickness: nan
+2026-11-23 03:33:00,580 - Newton iteration  39
+2026-11-23 03:33:00,655 - a.Energy =              nan
+2026-11-23 03:33:00,656 - <A u39, A u39>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:33:01,129 - Maximum swollen gel thickness: nan
+2026-11-23 03:33:07,484 - Newton iteration  40
+2026-11-23 03:33:07,561 - a.Energy =              nan
+2026-11-23 03:33:07,562 - <A u40, A u40>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:33:08,029 - Maximum swollen gel thickness: nan
+2026-11-23 03:33:14,470 - Newton iteration  41
+2026-11-23 03:33:14,546 - a.Energy =              nan
+2026-11-23 03:33:14,547 - <A u41, A u41>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:33:15,018 - Maximum swollen gel thickness: nan
+2026-11-23 03:33:21,379 - Newton iteration  42
+2026-11-23 03:33:21,456 - a.Energy =              nan
+2026-11-23 03:33:21,457 - <A u42, A u42>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:33:21,921 - Maximum swollen gel thickness: nan
+2026-11-23 03:33:28,370 - Newton iteration  43
+2026-11-23 03:33:28,446 - a.Energy =              nan
+2026-11-23 03:33:28,447 - <A u43, A u43>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:33:28,917 - Maximum swollen gel thickness: nan
+2026-11-23 03:33:35,286 - Newton iteration  44
+2026-11-23 03:33:35,362 - a.Energy =              nan
+2026-11-23 03:33:35,363 - <A u44, A u44>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:33:35,835 - Maximum swollen gel thickness: nan
+2026-11-23 03:33:42,281 - Newton iteration  45
+2026-11-23 03:33:42,357 - a.Energy =              nan
+2026-11-23 03:33:42,358 - <A u45, A u45>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:33:42,829 - Maximum swollen gel thickness: nan
+2026-11-23 03:33:49,161 - Newton iteration  46
+2026-11-23 03:33:49,236 - a.Energy =              nan
+2026-11-23 03:33:49,237 - <A u46, A u46>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:33:49,709 - Maximum swollen gel thickness: nan
+2026-11-23 03:33:56,177 - Newton iteration  47
+2026-11-23 03:33:56,254 - a.Energy =              nan
+2026-11-23 03:33:56,255 - <A u47, A u47>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:33:56,722 - Maximum swollen gel thickness: nan
+2026-11-23 03:34:03,105 - Newton iteration  48
+2026-11-23 03:34:03,180 - a.Energy =              nan
+2026-11-23 03:34:03,181 - <A u48, A u48>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:34:03,654 - Maximum swollen gel thickness: nan
+2026-11-23 03:34:10,060 - Newton iteration  49
+2026-11-23 03:34:10,138 - a.Energy =              nan
+2026-11-23 03:34:10,138 - <A u49, A u49>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:34:10,603 - Maximum swollen gel thickness: nan
+2026-11-23 03:34:16,981 - Newton iteration  50
+2026-11-23 03:34:17,056 - a.Energy =              nan
+2026-11-23 03:34:17,057 - <A u50, A u50>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:34:17,524 - Maximum swollen gel thickness: nan
+2026-11-23 03:34:23,956 - Newton iteration  51
+2026-11-23 03:34:24,032 - a.Energy =              nan
+2026-11-23 03:34:24,033 - <A u51, A u51>_-1^0.5 ?=? <du, res>_2^0.5 = nan
+2026-11-23 03:34:24,503 - Maximum swollen gel thickness: nan
+slurmstepd: error: *** JOB 1104903 ON toki-hm-1 CANCELLED AT 2026-11-23T03:34:25 ***
